@@ -1,4 +1,4 @@
-socomd_main
+socomd_medical
 ========
 
-Backbone of other components, defining most of the commonly used macros.
+Medical addon for ACE and KAT, updates existing and adds in custom functionality

@@ -6,9 +6,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {};
+        requiredAddons[] = {"socomd_main"};
         author = "";
-        authors[] = {"ACE Team", "Glowbal"};
+        authors[] = {"SOCOMD J4"};
         authorUrl = "http://ace3mod.com";
         VERSION_CONFIG;
     };

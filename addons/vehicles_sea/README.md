@@ -1,4 +1,4 @@
-socomd_main
+socomd_vehicles_sea
 ========
 
-Backbone of other components, defining most of the commonly used macros.
+Overrides and event handling for all aquatic vehicles

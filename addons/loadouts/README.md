@@ -1,4 +1,4 @@
-socomd_main
+socomd_loadouts
 ========
 
-Backbone of other components, defining most of the commonly used macros.
+Custom unit loadouts, custom factions and ai groups
