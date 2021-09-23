@@ -6,13 +6,11 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_main"};
+        requiredAddons[] = {};
         author = "";
         authors[] = {"SOCOMD J4"};
-        authorUrl = "http://ace3mod.com";
+        authorUrl = "https://socomd.com";
         VERSION_CONFIG;
     };
 };
 
-#include "CfgEventHandlers.hpp"
-#include "CfgModuleCategories.hpp"

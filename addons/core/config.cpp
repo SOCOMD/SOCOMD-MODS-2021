@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {"socomd_main"};
         author = "";
         authors[] = {"SOCOMD J4"};
-        authorUrl = "http://ace3mod.com";
+        authorUrl = "https://socomd.com";
         VERSION_CONFIG;
     };
 };

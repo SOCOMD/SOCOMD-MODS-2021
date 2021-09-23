@@ -1,1 +1,1 @@
-#include "\z\socomd\addons\blank\script_component.hpp"
+#include "\z\socomd\addons\qstore\script_component.hpp"

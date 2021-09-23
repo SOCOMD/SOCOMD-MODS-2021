@@ -16,5 +16,5 @@ about: Request a new feature or functionality
 ### Detailed instructions
 
 For further instructions check the wiki:
-http://ace3mod.com/wiki/user/how-to-make-a-feature-request.html
+https://socomd.com/wiki/user/how-to-make-a-feature-request.html
 

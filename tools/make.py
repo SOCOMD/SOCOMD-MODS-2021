@@ -952,10 +952,10 @@ See the make.cfg file for additional build options.
         # BI Tools work drive on Windows
         work_drive = cfg.get(make_target, "work_drive",  fallback="P:\\")
 
-        # Private key path
+        # private key path
         key = cfg.get(make_target, "key", fallback=None)
 
-        # Private key creation directory
+        # private key creation directory
         private_key_path = cfg.get(make_target, "private_key_path", fallback=os.path.join(work_drive, "private_keys"))
 
         # Project prefix (folder path)
