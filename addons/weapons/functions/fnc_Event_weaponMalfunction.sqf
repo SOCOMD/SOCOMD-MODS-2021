@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 params ["_unit", "_killer", "_instigator", "_useEffects"];
 
 _blacklist = [

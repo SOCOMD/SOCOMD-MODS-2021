@@ -4,13 +4,14 @@ path_parent = os.path.dirname(os.getcwd())
 
 for subdir, dirs, files in os.walk(path_parent + "\\addons"):
     for direc in dirs:
-        curDir =  os.path.join(subdir, direc)
+        curSubDir = subdir
+        curDir =  os.path.join(curSubDir, direc)
         if direc == "functions":
-            curSubDir = subdir
             output = ""
             print("checking: " + curDir)
             for subdir, dirs, files in os.walk(curDir):
                 for file in files:
+                    print(os.path.join(curDir, file))
                     if file.endswith(".sqf"):
                         with open(os.path.join(curDir, file),'r') as f:
                             if not '#include "script_component.hpp"' in f.read():
@@ -42,17 +43,17 @@ for subdir, dirs, files in os.walk(path_parent + "\\addons"):
                 prepFile = open(os.path.join(curSubDir,"XEH_PREP.hpp"),"w") 
                 prepFile.write(output)
                 prepFile.close()
+                
+    for direc in dirs:
+        curSubDir = subdir
+        curDir =  os.path.join(curSubDir, direc)
         if direc == "configs":
-            print(direc)
-            print(subdir)
-            currentDir = subdir
             full_path = os.path.join(subdir,direc)
-            print(full_path)
             for subdir, dirs, files in os.walk(curDir):
                 for file in files:
                     # print( os.path.join(full_path,subdir, file))
                     f = open(os.path.join(full_path,subdir, file), 'r')
-                    if not '#include "'+currentDir[2:]+'\\script_component.hpp"' in f.read():
+                    if not '#include "'+curSubDir[2:]+'\\script_component.hpp"' in f.read():
                         with open(os.path.join(full_path,subdir, file), 'r') as original: data = original.read()
-                        with open(os.path.join(full_path,subdir, file), 'w') as modified: modified.write('#include "'+currentDir[2:]+'\\script_component.hpp"\n' + data)
+                        with open(os.path.join(full_path,subdir, file), 'w') as modified: modified.write('#include "'+curSubDir[2:]+'\\script_component.hpp"\n' + data)
             
