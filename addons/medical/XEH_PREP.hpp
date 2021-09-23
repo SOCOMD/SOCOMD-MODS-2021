@@ -1,5 +1,3 @@
-PREP(apapLocal);
-PREP(apapSuccess);
 PREP(checkResponse);
 PREP(handleStateCardiacArrest);
 PREP(ketamineLocal);

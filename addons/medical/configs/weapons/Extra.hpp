@@ -1,3 +1,4 @@
+#include "\z\socomd\addons\medical\script_component.hpp"
 class SOCOMD_booboo: ACE_ItemCore {
     displayName="Blue Force Gear Boo Boo Kit";
     scope = 2;

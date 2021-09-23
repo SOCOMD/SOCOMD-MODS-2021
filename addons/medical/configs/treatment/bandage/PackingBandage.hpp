@@ -1,3 +1,4 @@
+#include "\z\socomd\addons\medical\script_component.hpp"
 class PackingBandage: FieldDressing {
     class Abrasion {
         effectiveness=4;

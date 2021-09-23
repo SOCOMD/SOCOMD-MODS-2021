@@ -1,3 +1,4 @@
+#include "\z\socomd\addons\medical\script_component.hpp"
 
 class SOCOMD_Morphine {
     allowSelfTreatment = 1;

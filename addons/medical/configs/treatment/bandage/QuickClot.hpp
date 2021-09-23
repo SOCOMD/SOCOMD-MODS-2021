@@ -1,3 +1,4 @@
+#include "\z\socomd\addons\medical\script_component.hpp"
 class QuikClot: FieldDressing {
     class Abrasion {
         effectiveness=7;

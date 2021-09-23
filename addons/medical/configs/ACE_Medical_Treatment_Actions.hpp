@@ -1,3 +1,4 @@
+#include "\z\socomd\addons\medical\script_component.hpp"
 class ace_medical_treatment_actions {
     #include "actions\Bandages.hpp"
     #include "actions\Medication.hpp"

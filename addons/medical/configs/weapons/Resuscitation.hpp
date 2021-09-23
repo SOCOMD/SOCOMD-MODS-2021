@@ -1,3 +1,4 @@
+#include "\z\socomd\addons\medical\script_component.hpp"
 
 class kat_AED: ACE_ItemCore {
     displayName="HeartStart MRx";

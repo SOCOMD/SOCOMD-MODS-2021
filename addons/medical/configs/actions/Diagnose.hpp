@@ -1,3 +1,4 @@
+#include "\z\socomd\addons\medical\script_component.hpp"
 class Diagnose: BasicBandage {};
 class CheckPulse: Diagnose {};
 class CheckBloodPressure: CheckPulse {};
