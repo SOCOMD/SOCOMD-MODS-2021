@@ -4,14 +4,13 @@ path_parent = os.path.dirname(os.getcwd())
 
 for subdir, dirs, files in os.walk(path_parent + "\\addons"):
     for direc in dirs:
-        curSubDir = subdir
-        curDir =  os.path.join(curSubDir, direc)
         if direc == "functions":
+            curDir =  os.path.join(subdir, direc)
+            curSubDir = subdir
             output = ""
             print("checking: " + curDir)
             for subdir, dirs, files in os.walk(curDir):
                 for file in files:
-                    print(os.path.join(curDir, file))
                     if file.endswith(".sqf"):
                         with open(os.path.join(curDir, file),'r') as f:
                             if not '#include "script_component.hpp"' in f.read():
@@ -43,3 +42,4 @@ for subdir, dirs, files in os.walk(path_parent + "\\addons"):
                 prepFile = open(os.path.join(curSubDir,"XEH_PREP.hpp"),"w") 
                 prepFile.write(output)
                 prepFile.close()
+                            

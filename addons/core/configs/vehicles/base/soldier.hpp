@@ -175,7 +175,7 @@ class SOCOMD_Soldier_BLK_SleevesDown : ADFU_Soldier_MC
 		};
 	hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\u_g3_blk_co.paa"
+			"\z\socomd\addons\data\CTgear\u_g3_blk_co.paa"
 		};
 	model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
 };
@@ -191,7 +191,7 @@ class SOCOMD_Soldier_AMC_SleevesDown : ADFU_Soldier_MC
 		};
 	hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\u_g3_amc_co.paa"
+			"\z\socomd\addons\data\CTgear\u_g3_amc_co.paa"
 		};
 };
 class SOCOMD_Soldier_AMC_SleevesUp : ADFU_Soldier_MC_Rolled
@@ -206,7 +206,7 @@ class SOCOMD_Soldier_AMC_SleevesUp : ADFU_Soldier_MC_Rolled
 		};
 	hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\u_g3_amc_co.paa"
+			"\z\socomd\addons\data\CTgear\u_g3_amc_co.paa"
 		};
 };
 class SEAL_AOR1 : ADFU_Soldier_MC 
@@ -221,7 +221,7 @@ class SEAL_AOR1 : ADFU_Soldier_MC
 		};
 	hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\VSM_ARD_AOR1_1.paa"
+			"\z\socomd\addons\data\CTgear\VSM_ARD_AOR1_1.paa"
 		};
 };
 
@@ -237,7 +237,7 @@ class SEAL_AOR2 : SEAL_AOR1
 		};
 	hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\AOR_2.paa"
+			"\z\socomd\addons\data\CTgear\AOR_2.paa"
 		};
 };
 
@@ -265,8 +265,8 @@ class SOCOMD_Survival: b_soldier_survival_F
 	};
 	hiddenUnderwaterSelectionsTextures[]=
 	{
-		"\socomd_data_core\uniform\clothes\black_flipers.paa",
-		"\socomd_data_core\uniform\clothes\black_flipers.paa",
+		"\z\socomd\addons\data\\uniform\clothes\black_flipers.paa",
+		"\z\socomd\addons\data\\uniform\clothes\black_flipers.paa",
 		"\A3\characters_f\data\visors_ca.paa"
 	};
 	hiddenSelections[]=
@@ -279,7 +279,7 @@ class SOCOMD_Survival: b_soldier_survival_F
 	hiddenSelectionsTextures[]=
 	{
 		"\ADFU_Units_MC\data\u_g3_mc_co.paa",
-		"\socomd_data_core\uniform\clothes\black_boots.paa",
+		"\z\socomd\addons\data\\uniform\clothes\black_boots.paa",
 		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
@@ -304,8 +304,8 @@ class SOCOMD_Survival_AMCU: SOCOMD_Survival {
 	};
 	hiddenUnderwaterSelectionsTextures[]=
 	{
-		"\socomd_data_core\uniform\clothes\black_flipers.paa",
-		"\socomd_data_core\uniform\clothes\black_flipers.paa",
+		"\z\socomd\addons\data\\uniform\clothes\black_flipers.paa",
+		"\z\socomd\addons\data\\uniform\clothes\black_flipers.paa",
 		"\A3\characters_f\data\visors_ca.paa"
 	};
 	hiddenSelections[]=
@@ -317,8 +317,8 @@ class SOCOMD_Survival_AMCU: SOCOMD_Survival {
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\u_g3_amc_co.paa",
-		"\socomd_data_core\uniform\clothes\black_boots.paa",
+		"\z\socomd\addons\data\CTgear\u_g3_amc_co.paa",
+		"\z\socomd\addons\data\\uniform\clothes\black_boots.paa",
 		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
@@ -352,6 +352,6 @@ class SOCOMD_Tee_AMCU: SOCOMD_Tee
 	uniformClass="SOCOMD_Tee_AMCU_uniform";
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\u_g3_amc_co.paa"
+		"\z\socomd\addons\data\CTgear\u_g3_amc_co.paa"
 	};
 };

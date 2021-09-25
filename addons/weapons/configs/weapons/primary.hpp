@@ -342,10 +342,10 @@ class SOCOMD_SSO_AK: CUP_arifle_AK104_railed {
         };
         hiddenSelectionsTextures[]=
         {
-            "\socomd_data_core\Russian\ak74m_body_camo_co.paa",
-            "\socomd_data_core\Russian\ak74m_stock_camo_co.paa",
-            "\socomd_data_core\Russian\ak74m_grip_rail_co.paa",
-            "\socomd_data_core\Russian\fortisshift_foregrip_co.paa"
+            "\z\socomd\addons\data\\Russian\ak74m_body_camo_co.paa",
+            "\z\socomd\addons\data\\Russian\ak74m_stock_camo_co.paa",
+            "\z\socomd\addons\data\\Russian\ak74m_grip_rail_co.paa",
+            "\z\socomd\addons\data\\Russian\fortisshift_foregrip_co.paa"
         };
         magazines[]=
         {

@@ -41,3 +41,20 @@ class SOCOMD_LAW_Used: SOCOMD_LAW_Loaded
         mass = 17.3;
     };
 };
+
+class Launcher;
+	class Launcher_Base_F: Launcher
+	{
+		class WeaponsSlotsInfo;
+	};
+	class twc_2inch_bag: Launcher_Base_F
+	{
+		author = "[TWC] Rik & [TWC] lockoncap";
+		scope = 2;
+		displayname = "60mm Mortar";
+		model = "twc_2inch\twc_2inch_bag.p3d";
+		picture = "\twc_2inch\data\ui\w_2inch_ca.paa";
+		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+		magazines[] = {"twc_2inch_he_1rnd","twc_2inch_smoke_1rnd","twc_2inch_illum_1rnd"};
+		handAnim[] = {};
+	};

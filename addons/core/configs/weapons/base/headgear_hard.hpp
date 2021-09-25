@@ -1,31 +1,4 @@
-    
-#define HELMET_ARMOR(ARMOR,PASS) \
-class ItemInfo : ItemInfo { \
-	class HitpointsProtectionInfo { \
-		class Head { \
-			armor = ARMOR; \
-			hitPointName = "HitHead"; \
-			passThrough = PASS; \
-		}; \
-	}; \
-};
 
-#define HELMET_ARMOR_STRONG HELMET_ARMOR(12,0.1)
-#define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1)
-#define HELMET_BOONIE_ARMOR HELMET_ARMOR(0,1)
-
-
-#define HEARING_PROTECTION_VICCREW ace_hearing_protection = 1;\
-advanced_peltors_protection = 1;
-
-
-#define HEARING_PROTECTION_EARMUFF ace_hearing_lowerVolume = 0.75;\
-ace_hearing_protection = 0.5;
-
-
-#define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;\
-ace_hearing_protection = 0.4;\
-advanced_peltors_protection = 1;
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -50,74 +23,74 @@ class acwp_airframe_amcu_ct3_light_strap:acwp_airframe_mc_ct3_light_strap
 {
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (Tan light) (A)";
-	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
+	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 };
 class acwp_airframe_amcu_ct3_light:acwp_airframe_mc_ct3_light
 {
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (Tan light) (B)";
-	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
+	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa",""};
 	
 };
 class acwp_airframe_amcu_light_strap:acwp_airframe_mc_light_strap
 {	
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (Tan light) (C)";
-	hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
+	hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 };
 class acwp_airframe_amcu_light:acwp_airframe_mc_light
 {	
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (Tan light) (D)";
-	hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
+	hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa",""};
 };
 class acwp_airframe_amcu_ct3_light_black_strap:acwp_airframe_mc_ct3_light_black_strap
 {
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (Black light) (A)";
-	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
+	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 };
 class acwp_airframe_amcu_ct3_light_black:acwp_airframe_mc_ct3_light_black
 {
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (Black light) (B)";
-	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
+	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa",""};
 };
 class acwp_airframe_amcu_light_black_strap:acwp_airframe_mc_light_black_strap
 {
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (Black light) (C)";
-	hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
+	hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 };
 class acwp_airframe_amcu_light_black:acwp_airframe_mc_light_black
 {
 	HEARING_PROTECTION_PELTOR	
 	displayName = "Crye Airframe AMCU (Black light) (D)";	
-	hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
+	hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa",""};
 };
 class acwp_airframe_amcu_ct3_strap:acwp_airframe_mc_ct3_strap
 {
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (No light) (A)";
-	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
+	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 };
 class acwp_airframe_amcu_ct3:acwp_airframe_mc_ct3
 {
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (No light) (B)";
-	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
+	hiddenSelectionsTextures[] = {"acwp_carrier\data\helmet\manta_dark.paa","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa",""};
 };
 class acwp_airframe_amcu_strap:acwp_airframe_mc_strap
 {
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (No light) (C)";
-	hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
+	hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa","acwp_carrier\data\helmet\manta_dark.paa"};
 };
 class acwp_airframe_amcu:acwp_airframe_mc
 {
 	HEARING_PROTECTION_PELTOR
 	displayName = "Crye Airframe AMCU (No light) (D)";
-	hiddenSelectionsTextures[] = {"","socomd_data_core\CTgear\h_airframe_cover_AMC_co.paa",""};
+	hiddenSelectionsTextures[] = {"","\z\socomd\addons\data\CTgear\h_airframe_cover_AMC_co.paa",""};
 };
 
 
@@ -203,7 +176,7 @@ class ADFU_H_OpsCore_02_BLK: ADFU_H_OpsCore_02 {
 	};
 
 	hiddenSelectionsTextures[]= {
-		"socomd_data_core\CTgear\h_opscore_black_co.paa",
+		"\z\socomd\addons\data\CTgear\h_opscore_black_co.paa",
 		"",
 		"",
 		"",
@@ -247,7 +220,7 @@ class ADFU_H_OpsCore_08_BLK: ADFU_H_OpsCore_08 {
 	};
 
 	hiddenSelectionsTextures[]= {
-		"socomd_data_core\CTgear\h_opscore_black_co.paa",
+		"\z\socomd\addons\data\CTgear\h_opscore_black_co.paa",
 		"",
 		"",
 		"",
@@ -255,7 +228,7 @@ class ADFU_H_OpsCore_08_BLK: ADFU_H_OpsCore_08 {
 		"",
 		"",
 		"",
-		"socomd_data_core\CTgear\h_gear_01_black_co.paa",
+		"\z\socomd\addons\data\CTgear\h_gear_01_black_co.paa",
 		"",
 		"",
 		"",
@@ -311,8 +284,8 @@ class ADFU_H_Airframe_02_tan: ADFU_H_Airframe_Cover_02 {
 		"",
 		"",
 		"",
-		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
-		"socomd_data_core\CTgear\h_fast_khk_co.paa"
+		"\z\socomd\addons\data\CTgear\h_airframe_tan_co.paa",
+		"\z\socomd\addons\data\CTgear\h_fast_khk_co.paa"
 	};
 };
 
@@ -345,8 +318,8 @@ class ADFU_H_Airframe_03_tan: ADFU_H_Airframe_Cover_03 {
 		"",
 		"",
 		"",
-		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
-		"socomd_data_core\CTgear\h_fast_khk_co.paa"
+		"\z\socomd\addons\data\CTgear\h_airframe_tan_co.paa",
+		"\z\socomd\addons\data\CTgear\h_fast_khk_co.paa"
 	};
 };
 
@@ -377,11 +350,11 @@ class ADFU_H_Airframe_10_tan: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"",
 		"",
-		"socomd_data_core\CTGear\manta_dark.paa",
+		"\z\socomd\addons\data\CTGear\manta_dark.paa",
 		"",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
-		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
-		"socomd_data_core\CTgear\h_fast_khk_co.paa"
+		"\z\socomd\addons\data\CTgear\h_airframe_tan_co.paa",
+		"\z\socomd\addons\data\CTgear\h_fast_khk_co.paa"
 	};
 };
 
@@ -411,11 +384,11 @@ class ADFU_H_Airframe_11_tan: ADFU_H_Airframe_Cover_05 {
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
 		"",
 		"",
-		"socomd_data_core\CTGear\manta_dark.paa",
+		"\z\socomd\addons\data\CTGear\manta_dark.paa",
 		"",
 		"ADFU_Units\data\h_gear_01_khk_co.paa",
-		"socomd_data_core\CTgear\h_airframe_tan_co.paa",
-		"socomd_data_core\CTgear\h_fast_khk_co.paa"
+		"\z\socomd\addons\data\CTgear\h_airframe_tan_co.paa",
+		"\z\socomd\addons\data\CTgear\h_fast_khk_co.paa"
 	};
 };
 

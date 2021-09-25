@@ -1,4 +1,8 @@
     
+    
+class HMG_01 : HMG_127 {
+    class manual;
+};
 // HMG_01_base_F uses this, csat turrets. watch em go balastic compared to other taliban at 900m range :D.
 class HMG_static : HMG_01 {
     class manual : manual {

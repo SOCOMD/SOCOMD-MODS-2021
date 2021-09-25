@@ -241,10 +241,10 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 			displayName = "SOCOMD";
 			author = AUTHOR_STR;
 			textures[] = {
-				"socomd_data_core\boxer\APC_Wheeled_03_Ext_CO.paa",
-				"socomd_data_core\boxer\APC_Wheeled_03_Ext2_CO.paa",
-				"socomd_data_core\boxer\RCWS30_CO.paa",
-				"socomd_data_core\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
+				"\z\socomd\addons\data\boxer\APC_Wheeled_03_Ext_CO.paa",
+				"\z\socomd\addons\data\boxer\APC_Wheeled_03_Ext2_CO.paa",
+				"\z\socomd\addons\data\boxer\RCWS30_CO.paa",
+				"\z\socomd\addons\data\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
 				"A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
 				"A3\armor_f\data\cage_sand_co.paa"
 			};
@@ -262,10 +262,10 @@ class SOCOMD_APC_A : I_APC_Wheeled_03_cannon_F {
 	};
 
 	hiddenSelectionsTextures[] = {
-		"socomd_data_core\boxer\APC_Wheeled_03_Ext_CO.paa",
-		"socomd_data_core\boxer\APC_Wheeled_03_Ext2_CO.paa",
-		"socomd_data_core\boxer\RCWS30_CO.paa",
-		"socomd_data_core\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
+		"\z\socomd\addons\data\boxer\APC_Wheeled_03_Ext_CO.paa",
+		"\z\socomd\addons\data\boxer\APC_Wheeled_03_Ext2_CO.paa",
+		"\z\socomd\addons\data\boxer\RCWS30_CO.paa",
+		"\z\socomd\addons\data\boxer\APC_Wheeled_03_Ext_alpha_CO.paa",
 		"A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
 		"A3\armor_f\data\cage_sand_co.paa"
 	};
@@ -424,10 +424,10 @@ class APC_Wheeled_01_base_F;
 // 			displayName = "SOCOMD";
 // 			author = AUTHOR_STR;
 // 			textures[] = {
-// 				"socomd_data_core\lav\lavbody_co.paa",
-// 				"socomd_data_core\lav\lavbody2_co.paa",
-// 				"socomd_data_core\lav\kangaroo_decal.paa",
-// 				"socomd_data_core\lav\lavalfa_ca.paa"
+// 				"\z\socomd\addons\data\lav\lavbody_co.paa",
+// 				"\z\socomd\addons\data\lav\lavbody2_co.paa",
+// 				"\z\socomd\addons\data\lav\kangaroo_decal.paa",
+// 				"\z\socomd\addons\data\lav\lavalfa_ca.paa"
 // 			};
 // 			faction[] = {"BLU_F_F","OPF_G_F","IND_G_F"};
 // 		};
@@ -441,10 +441,10 @@ class APC_Wheeled_01_base_F;
 // 	};
 
 // 	hiddenselectionstextures[] = {
-// 		"socomd_data_core\lav\lavbody_co.paa",
-// 		"socomd_data_core\lav\lavbody2_co.paa",
-// 		"socomd_data_core\lav\kangaroo_decal.paa",
-// 		"socomd_data_core\lav\lavalfa_ca.paa"
+// 		"\z\socomd\addons\data\lav\lavbody_co.paa",
+// 		"\z\socomd\addons\data\lav\lavbody2_co.paa",
+// 		"\z\socomd\addons\data\lav\kangaroo_decal.paa",
+// 		"\z\socomd\addons\data\lav\lavalfa_ca.paa"
 // 	};
 
 // 	class AnimationSources : AnimationSources {

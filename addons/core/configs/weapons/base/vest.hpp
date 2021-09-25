@@ -164,11 +164,11 @@ class lbt_medical_blk : lbt_medical_coy {
 	};
 
 	hiddenSelectionsTextures[]= {
-		"socomd_data_core\CTgear\lbt_blk.paa",
-		"socomd_data_core\CTgear\gear_blk.paa",
-		"socomd_data_core\CTgear\radio_blk.paa",
-		"socomd_data_core\CTgear\shears_co.paa",
-		"socomd_data_core\CTgear\pouch_blk.paa"
+		"\z\socomd\addons\data\CTgear\lbt_blk.paa",
+		"\z\socomd\addons\data\CTgear\gear_blk.paa",
+		"\z\socomd\addons\data\CTgear\radio_blk.paa",
+		"\z\socomd\addons\data\CTgear\shears_co.paa",
+		"\z\socomd\addons\data\CTgear\pouch_blk.paa"
 	};
 };
 
@@ -205,11 +205,11 @@ class lbt_operator_blk : lbt_operator_coy {
 	};
 
 	hiddenSelectionsTextures[]= {
-		"socomd_data_core\CTgear\lbt_blk.paa",
-		"socomd_data_core\CTgear\gear_blk.paa",
-		"socomd_data_core\CTgear\radio_blk.paa",
-		"socomd_data_core\CTgear\grenade_blk.paa",
-		"socomd_data_core\CTgear\pouch_blk.paa"
+		"\z\socomd\addons\data\CTgear\lbt_blk.paa",
+		"\z\socomd\addons\data\CTgear\gear_blk.paa",
+		"\z\socomd\addons\data\CTgear\radio_blk.paa",
+		"\z\socomd\addons\data\CTgear\grenade_blk.paa",
+		"\z\socomd\addons\data\CTgear\pouch_blk.paa"
 	};
 };
 
@@ -267,11 +267,11 @@ class lbt_tl_blk : lbt_tl_coy {
 	};
 
 	hiddenSelectionsTextures[]= {
-		"socomd_data_core\CTgear\lbt_blk.paa",
-		"socomd_data_core\CTgear\gear_blk.paa",
-		"socomd_data_core\CTgear\radio_blk.paa",
-		"socomd_data_core\CTgear\grenade_blk.paa",
-		"socomd_data_core\CTgear\pouch_blk.paa"
+		"\z\socomd\addons\data\CTgear\lbt_blk.paa",
+		"\z\socomd\addons\data\CTgear\gear_blk.paa",
+		"\z\socomd\addons\data\CTgear\radio_blk.paa",
+		"\z\socomd\addons\data\CTgear\grenade_blk.paa",
+		"\z\socomd\addons\data\CTgear\pouch_blk.paa"
 	};
 };
 
@@ -318,8 +318,8 @@ class lbt_pouchless_amcu: lbt_pouchless_coy
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\lbt_amcu.paa",
-		"socomd_data_core\CTgear\gear_amcu.paa",
+		"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+		"\z\socomd\addons\data\CTgear\gear_amcu.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -331,8 +331,8 @@ class lbt_pouchless_amcu: lbt_pouchless_coy
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\lbt_amcu.paa",
-			"socomd_data_core\CTgear\gear_amcu.paa",
+			"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+			"\z\socomd\addons\data\CTgear\gear_amcu.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\pouchless";
@@ -355,11 +355,11 @@ class lbt_tl_amcu: lbt_tl_mc
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\lbt_amcu.paa",
-		"socomd_data_core\CTgear\gear_amcu.paa",
-		"socomd_data_core\CTgear\radio_AMCU_co.paa",
-		"socomd_data_core\CTgear\grenade_AMCU.paa",
-		"socomd_data_core\CTgear\pouch_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+		"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+		"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+		"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -374,11 +374,11 @@ class lbt_tl_amcu: lbt_tl_mc
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\lbt_amcu.paa",
-			"socomd_data_core\CTgear\gear_amcu.paa",
-			"socomd_data_core\CTgear\radio_AMCU_co.paa",
-			"socomd_data_core\CTgear\grenade_AMCU.paa",
-			"socomd_data_core\CTgear\pouch_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+			"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+			"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+			"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\tl";
@@ -402,11 +402,11 @@ class lbt_operator_amcu: lbt_pouchless_coy
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\lbt_amcu.paa",
-		"socomd_data_core\CTgear\gear_amcu.paa",
-		"socomd_data_core\CTgear\radio_AMCU_co.paa",
-		"socomd_data_core\CTgear\grenade_AMCU.paa",
-		"socomd_data_core\CTgear\pouch_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+		"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+		"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+		"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -421,11 +421,11 @@ class lbt_operator_amcu: lbt_pouchless_coy
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\lbt_amcu.paa",
-			"socomd_data_core\CTgear\gear_amcu.paa",
-			"socomd_data_core\CTgear\radio_AMCU_co.paa",
-			"socomd_data_core\CTgear\grenade_AMCU.paa",
-			"socomd_data_core\CTgear\pouch_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+			"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+			"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+			"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\operator";
@@ -451,11 +451,11 @@ class lbt_weapons_amcu: lbt_pouchless_coy
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\lbt_amcu.paa",
-		"socomd_data_core\CTgear\gear_amcu.paa",
-		"socomd_data_core\CTgear\radio_AMCU_co.paa",
-		"socomd_data_core\CTgear\grenade_AMCU.paa",
-		"socomd_data_core\CTgear\pouch_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+		"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+		"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+		"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 		"lbt\Data\m203_co.paa",
 		"lbt\Data\m203_gn.paa",
 		"insignia"
@@ -474,11 +474,11 @@ class lbt_weapons_amcu: lbt_pouchless_coy
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\lbt_amcu.paa",
-			"socomd_data_core\CTgear\gear_amcu.paa",
-			"socomd_data_core\CTgear\radio_AMCU_co.paa",
-			"socomd_data_core\CTgear\grenade_AMCU.paa",
-			"socomd_data_core\CTgear\pouch_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+			"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+			"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+			"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 			"lbt\Data\m203_co.paa",
 			"lbt\Data\m203_gn.paa",
 			"insignia"
@@ -504,11 +504,11 @@ class lbt_medical_amcu: lbt_pouchless_coy
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\lbt_amcu.paa",
-		"socomd_data_core\CTgear\gear_amcu.paa",
-		"socomd_data_core\CTgear\radio_AMCU_co.paa",
-		"socomd_data_core\CTgear\shears_AMCU.paa",
-		"socomd_data_core\CTgear\pouch_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+		"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+		"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+		"\z\socomd\addons\data\CTgear\shears_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -523,11 +523,11 @@ class lbt_medical_amcu: lbt_pouchless_coy
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\lbt_amcu.paa",
-			"socomd_data_core\CTgear\gear_amcu.paa",
-			"socomd_data_core\CTgear\radio_AMCU_co.paa",
-			"socomd_data_core\CTgear\shears_AMCU.paa",
-			"socomd_data_core\CTgear\pouch_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+			"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+			"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+			"\z\socomd\addons\data\CTgear\shears_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\medical";
@@ -551,11 +551,11 @@ class lbt_comms_amcu: lbt_pouchless_coy
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\lbt_amcu.paa",
-		"socomd_data_core\CTgear\gear_amcu.paa",
-		"socomd_data_core\CTgear\radio_AMCU_co.paa",
-		"socomd_data_core\CTgear\grenade_AMCU.paa",
-		"socomd_data_core\CTgear\pouch_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+		"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+		"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+		"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -570,11 +570,11 @@ class lbt_comms_amcu: lbt_pouchless_coy
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\lbt_amcu.paa",
-			"socomd_data_core\CTgear\gear_amcu.paa",
-			"socomd_data_core\CTgear\radio_AMCU_co.paa",
-			"socomd_data_core\CTgear\grenade_AMCU.paa",
-			"socomd_data_core\CTgear\pouch_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+			"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+			"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+			"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\comms";
@@ -598,11 +598,11 @@ class lbt_light_amcu: lbt_pouchless_coy
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\lbt_amcu.paa",
-		"socomd_data_core\CTgear\gear_amcu.paa",
-		"socomd_data_core\CTgear\radio_AMCU_co.paa",
-		"socomd_data_core\CTgear\grenade_AMCU.paa",
-		"socomd_data_core\CTgear\pouch_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+		"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+		"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+		"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+		"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 		"insignia"
 	};
 	class ItemInfo: ItemInfo
@@ -617,11 +617,11 @@ class lbt_light_amcu: lbt_pouchless_coy
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\lbt_amcu.paa",
-			"socomd_data_core\CTgear\gear_amcu.paa",
-			"socomd_data_core\CTgear\radio_AMCU_co.paa",
-			"socomd_data_core\CTgear\grenade_AMCU.paa",
-			"socomd_data_core\CTgear\pouch_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+			"\z\socomd\addons\data\CTgear\gear_amcu.paa",
+			"\z\socomd\addons\data\CTgear\radio_AMCU_co.paa",
+			"\z\socomd\addons\data\CTgear\grenade_AMCU.paa",
+			"\z\socomd\addons\data\CTgear\pouch_AMCU.paa",
 			"insignia"
 		};
 		uniformModel="\lbt\light";
@@ -645,8 +645,8 @@ class lbt_fast_amcu: lbt_pouchless_coy
 	};
 	hiddenSelectionsTextures[]=
 	{
-		"socomd_data_core\CTgear\lbt_amcu.paa",
-		"socomd_data_core\CTgear\gear_amcu.paa"
+		"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+		"\z\socomd\addons\data\CTgear\gear_amcu.paa"
 	};
 	class ItemInfo: ItemInfo
 	{
@@ -657,8 +657,8 @@ class lbt_fast_amcu: lbt_pouchless_coy
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"socomd_data_core\CTgear\lbt_amcu.paa",
-			"socomd_data_core\CTgear\gear_amcu.paa"
+			"\z\socomd\addons\data\CTgear\lbt_amcu.paa",
+			"\z\socomd\addons\data\CTgear\gear_amcu.paa"
 		};
 		uniformModel="\lbt\fast";
 		containerClass="Supply160";

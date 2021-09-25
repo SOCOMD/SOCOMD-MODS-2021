@@ -1,4 +1,3 @@
-PREP(Action_toggleGhillie);
 PREP(Action_ToggleHalo);
 PREP(addHandgunAmmo);
 PREP(addPrimaryAmmo);

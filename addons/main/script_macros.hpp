@@ -17,7 +17,7 @@
 #define LOGIC 7
 
 //SOCOMD
-#define AUTHOR_STR "SOCOMD Mod"
+#define AUTHOR_STR "SOCOMD J4"
 #define FACTION_STR "SOCOMD"
 
 #define UNIT_SOCOMD_UNARMED "SOCOMD_Unarmed"
@@ -100,6 +100,21 @@ class _xx_##id { \
 
 
 // headgear macros
+    
+#define HELMET_ARMOR(ARMOR,PASS) \
+class ItemInfo : ItemInfo { \
+	class HitpointsProtectionInfo { \
+		class Head { \
+			armor = ARMOR; \
+			hitPointName = "HitHead"; \
+			passThrough = PASS; \
+		}; \
+	}; \
+};
+
+#define HELMET_ARMOR_STRONG HELMET_ARMOR(12,0.1)
+#define HELMET_SOLS_ARMOR HELMET_ARMOR(12,0.1)
+#define HELMET_BOONIE_ARMOR HELMET_ARMOR(0,1)
 #define HEARING_PROTECTION_VICCREW ace_hearing_lowerVolume = 0.5;ace_hearing_protection = 1;advanced_peltors_protection = 1;
 
 

@@ -98,17 +98,17 @@ class CfgLoadoutWeapons {
         magazines[] ={
             {"ACWP_18Rnd_9x21_Mag_USP",3}
         };        
-    }
+    };
     class PISTOL_HP {
         magazines[] ={
             {"ACWP_13Rnd_9x21_Mag_HP",3}
         };        
-    }
+    };
     class PISTOL_GLOCK {
         magazines[] ={
             {"ACWP_19Rnd_9x21_Mag_glock",3}
         };        
-    }
+    };
     class Launcher {
         magazines[] = {};
     };

@@ -1,4 +1,4 @@
-    
+  
 class LMG_Minigun_Transport : LMG_Minigun {
     class manual : manual {
         // default dispersion = 0.00093;

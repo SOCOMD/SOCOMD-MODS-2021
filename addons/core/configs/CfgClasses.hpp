@@ -4,8 +4,8 @@ class CfgFactionClasses {
         priority = 1;
         side = 1;
         displayName = "SOCOMD";
-        flag = "socomd_data_core\icon\adfu_flag_co.paa";
-        icon = "socomd_data_core\icon\icon.paa";
+        flag = "\z\socomd\addons\data\icon\adfu_flag_co.paa";
+        icon = "\z\socomd\addons\data\icon\icon.paa";
         author = AUTHOR_STR;
     };
 };

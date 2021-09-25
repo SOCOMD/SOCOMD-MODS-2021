@@ -1,8 +1,6 @@
     
 class CfgMagazines {
     class CA_Magazine;
-    #include "magazines\base\magazines.hpp"
-    #include "magazines\override\socomd_men_magazines.hpp"
 
     class ClaymoreDirectionalMine_Remote_Mag: CA_Magazine {
         class ACE_Triggers {
