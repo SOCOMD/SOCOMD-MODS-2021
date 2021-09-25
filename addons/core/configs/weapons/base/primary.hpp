@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 //Vanilla
 class arifle_SPAR_01_GL_blk_F; //Using CBA_556x45_STANAG
 class arifle_SPAR_01_blk_F; //Using CBA_556x45_STANAG

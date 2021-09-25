@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class AU_03_780000_v1;
 class SOCOMD_BERET : AU_03_780000_v1 {
 	rgoc_canAcceptNVG = 0;

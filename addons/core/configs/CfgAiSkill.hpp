@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 /*
 REF: https://community.bistudio.com/wiki/AI_Sub-skills
 
@@ -39,60 +39,60 @@ spotTime
 
 All values are between 0-1, where 0 is worst and 1 is max.
 Arrays are {w, x, y, z} value from (w,y) gets interpolated into (x,z)
-	w = starting scalar
-	x = starting value
-	y = final scalar
-	z = final value
+    w = starting scalar
+    x = starting value
+    y = final scalar
+    z = final value
 Scalar's can be considered what is the theoretical maximum or minimum, i.e for Spot distance, 
 a scalar of 0 would mean right infront of it, while a scalar of 1 is basically at multiple kilomitres.
 if a starting scalar higher than 0 is used, it will be flat to 0 from that point, the same for final in the other direction,
 values linarly scale between between positions, moving scalar positions can configure the ramping of the skill till it flattens.
 
 Example:
-	spotDistance[] = {0, 0.2, 1, 0.4};
-	starting scalar 0, is 20% of maximum skill to spot,
-	finishing scalar 1, is 40% of maxium skill to spot,
-	
+    spotDistance[] = {0, 0.2, 1, 0.4};
+    starting scalar 0, is 20% of maximum skill to spot,
+    finishing scalar 1, is 40% of maxium skill to spot,
+    
 */
 
 // Keeping interpolation reasonably consistent with global skill coef to 1.0 means consistent results from mission maker adjustments,
 // & more importantly content\configs\vehicles\override\aiunits.hpp (when it is ready). 
 class CfgAISkill {
-	aimingAccuracy[]	= {0.0, 0.2, 1.0, 0.8};  // Note that low value means AI lacks confidence to fire, thus less cinematic.
-	aimingShake[]		= {0.0, 0.2, 1.0, 0.8};
-	aimingSpeed[]		= {0.0, 0.2, 1.0, 0.8};
-	commanding[]		= {0.0, 0.4, 1.0, 1.0};  // strangely this only affects target sharing, not "intelligence". This prevents skillFinal lower than 0.4, so LAMBS radio sharing works ok. 
-	courage[]			= {0.0, 0.75, 1.0, 1.0}; // always want relatively high courage.
-	general[]			= {0.0, 0.4, 1.0, 1.0};  // high general = tactical group leaders. This prevents skillFinal lower than 0.4, which would negate some LAMBS functions.  
-	reloadSpeed[]		= {0.0, 0.2, 1.0 ,1.0};
-	spotDistance[]		= {0.0, 0.2, 1.0, 0.8}; 
-	spotTime[]			= {0.0, 0.2, 1.0, 0.8};
+    aimingAccuracy[]    = {0.0, 0.2, 1.0, 0.8};  // Note that low value means AI lacks confidence to fire, thus less cinematic.
+    aimingShake[]        = {0.0, 0.2, 1.0, 0.8};
+    aimingSpeed[]        = {0.0, 0.2, 1.0, 0.8};
+    commanding[]        = {0.0, 0.4, 1.0, 1.0};  // strangely this only affects target sharing, not "intelligence". This prevents skillFinal lower than 0.4, so LAMBS radio sharing works ok. 
+    courage[]            = {0.0, 0.75, 1.0, 1.0}; // always want relatively high courage.
+    general[]            = {0.0, 0.4, 1.0, 1.0};  // high general = tactical group leaders. This prevents skillFinal lower than 0.4, which would negate some LAMBS functions.  
+    reloadSpeed[]        = {0.0, 0.2, 1.0 ,1.0};
+    spotDistance[]        = {0.0, 0.2, 1.0, 0.8}; 
+    spotTime[]            = {0.0, 0.2, 1.0, 0.8};
 };
 
 /*
 
 // Below is defaults
 class CfgAILevelPresets {
-	class AILevelHigh {
-		displayName = "Expert";
-		precisionAI = 0.7;
-		skillAI = 0.8;
-	};
-	class AILevelMedium {
-		displayName = "Normal";
-		precisionAI = 0.5;
-		skillAI = 0.7;
-	};
-	class AILevelLow {
-		displayName = "Novice";
-		precisionAI = 0.2;
-		skillAI = 0.5;
-	};
-	class Custom {
-		displayName = "Custom";
-		precisionAI = 0.5;
-		skillAI = 0.5;
-	};
+    class AILevelHigh {
+        displayName = "Expert";
+        precisionAI = 0.7;
+        skillAI = 0.8;
+    };
+    class AILevelMedium {
+        displayName = "Normal";
+        precisionAI = 0.5;
+        skillAI = 0.7;
+    };
+    class AILevelLow {
+        displayName = "Novice";
+        precisionAI = 0.2;
+        skillAI = 0.5;
+    };
+    class Custom {
+        displayName = "Custom";
+        precisionAI = 0.5;
+        skillAI = 0.5;
+    };
 };
 
 */

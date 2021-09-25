@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\medical\script_component.hpp"
+    
 class BloodIV: BasicBandage {
     treatmentTime = 5;
 };

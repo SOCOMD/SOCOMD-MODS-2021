@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 
 ////////////////////////////////////////////////////////////////////////////////
 // WARRIOR
@@ -6,7 +6,7 @@
 class B_Boat_Transport_01_F;
 class SOCOMD_BOAT : B_Boat_Transport_01_F {
 	scope = SCOPE_PROTECTED;
-	scopeCurator = private;
+	scopeCurator = SCOPE_PRIVATE;
 	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea;
 	side = WEST;
@@ -57,7 +57,7 @@ class SOCOMD_BOAT : B_Boat_Transport_01_F {
 class B_Boat_Armed_01_minigun_F;
 class SOCOMD_BOAT_ASSAULT : B_Boat_Armed_01_minigun_F {
 	scope = SCOPE_PROTECTED;
-	scopeCurator = private;
+	scopeCurator = SCOPE_PRIVATE;
 	editorCategory = SOCOMD_EdCat_Core;
 	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Sea;
 	side = WEST;

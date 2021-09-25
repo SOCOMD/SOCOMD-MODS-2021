@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\medical\script_component.hpp"
+    
 class ace_medical_treatment {
     class Bandaging {
         class Bandage {

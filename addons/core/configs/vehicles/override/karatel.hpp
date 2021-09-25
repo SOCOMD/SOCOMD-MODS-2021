@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 // ifirits from a3l.
 /*class O_T_MRAP_02_hmg_ghex_F : MRAP_02_hmg_base_F {
     class Turrets : Turrets {

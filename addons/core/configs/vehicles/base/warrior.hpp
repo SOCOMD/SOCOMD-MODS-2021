@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 ////////////////////////////////////////////////////////////////////////////////
 // WARRIOR
 
@@ -58,4 +58,4 @@ class SOCOMD_WARRIOR_##ID : B_Heli_Transport_01_F { \
 };
 
 WARRIOR_BASE(A,SCOPE_PUBLIC)
-WARRIOR_BASE(B,private)
+WARRIOR_BASE(B,SCOPE_PRIVATE)

@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 //Standard Rounds
 class SOCOMD_Item_Magazine_556x45_30Rnd             : ACWP_30rnd_556x45_EPR_PMAG {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Magazine_556x45_30Rnd_Tracer      : ACWP_30rnd_556x45_M_PMAG {scope = SCOPE_PROTECTED;};

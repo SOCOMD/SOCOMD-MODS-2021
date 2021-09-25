@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class SOCOMD_ITEM_PRIMARY_GL               : arifle_SPAR_01_GL_blk_F {scope = SCOPE_PROTECTED;};
 class SOCOMD_ITEM_PRIMARY_GL              : arifle_SPAR_01_GL_blk_F {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Primary_Rifleman                  : arifle_SPAR_01_blk_F {scope = SCOPE_PROTECTED;};

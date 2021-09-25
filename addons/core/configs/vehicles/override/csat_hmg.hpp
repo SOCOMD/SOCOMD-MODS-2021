@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 /*class O_HMG_01_F : HMG_01_base_F {
     class Turrets : Turrets {
         class MainTurret : MainTurret {

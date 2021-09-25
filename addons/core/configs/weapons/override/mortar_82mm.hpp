@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 /*
 // issue with inheriting from mode burst, since cannoncore doesn't create it.
 class Mode_Burst;

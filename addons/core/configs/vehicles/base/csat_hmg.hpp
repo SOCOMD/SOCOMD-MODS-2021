@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 /*class StaticWeapon;
 class StaticMGWeapon : StaticWeapon {
     class Turrets;

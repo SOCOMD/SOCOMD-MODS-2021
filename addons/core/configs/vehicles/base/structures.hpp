@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class static;
 class Building : Static {
     // this appears to do nothing

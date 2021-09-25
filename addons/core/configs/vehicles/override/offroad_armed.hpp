@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 /*class O_G_Offroad_01_armed_F : I_G_Offroad_01_armed_F {
     class Turrets : Turrets {
         class M2_Turret : M2_Turret {

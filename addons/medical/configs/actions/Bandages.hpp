@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\medical\script_component.hpp"
+    
 class BasicBandage;
 class FieldDressing: BasicBandage {
     displayName = "Israeli Bandage";

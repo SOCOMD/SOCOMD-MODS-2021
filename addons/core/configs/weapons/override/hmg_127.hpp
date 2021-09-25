@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class HMG_127 : LMG_RCWS {
     class manual : MGun {
         dispersion = 0.0012;

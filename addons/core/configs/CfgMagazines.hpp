@@ -1,10 +1,10 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class CfgMagazines {
-	class CA_Magazine;
-	#include "magazines\base\magazines.hpp"
-	#include "magazines\override\socomd_men_magazines.hpp"
+    class CA_Magazine;
+    #include "magazines\base\magazines.hpp"
+    #include "magazines\override\socomd_men_magazines.hpp"
 
-	class ClaymoreDirectionalMine_Remote_Mag: CA_Magazine {
+    class ClaymoreDirectionalMine_Remote_Mag: CA_Magazine {
         class ACE_Triggers {
             SupportedTriggers[] = {"Command", "MK16_Transmitter"};
             class Command {

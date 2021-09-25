@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\medical\script_component.hpp"
+    
 class ACE_fieldDressing : ACE_ItemCore {
     scope=SCOPE_PUBLIC;
     picture="\socomd_medical\tex\IB";

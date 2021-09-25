@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 
 #define SOLDIER_BASE_LINKEDITEMS \
 	ITEM01("ItemMap"), \

@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class SOCOMD_BackpackPRC117F : Kit_Bag_R_MC {
 	scope = SCOPE_PUBLIC;
 	author = AUTHOR_STR;

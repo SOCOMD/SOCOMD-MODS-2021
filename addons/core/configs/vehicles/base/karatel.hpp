@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 /*class MRAP_02_base_F : Car_F {
     class Turrets;
 };

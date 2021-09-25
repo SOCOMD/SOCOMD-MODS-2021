@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 #define HELMET_ARMOR(ARMOR,PASS) \
 class ItemInfo : ItemInfo { \
 	class HitpointsProtectionInfo { \

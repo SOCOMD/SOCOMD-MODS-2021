@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class CargoNet_01_box_F; //Cardboard box with net
 class B_supplyCrate_F; //Tall Green box with net
 class Box_NATO_Wps_F; //Flat long box
@@ -136,7 +136,7 @@ class SOCOMD_Crate_Hasty : B_supplyCrate_F {
 ////////////////////////////////////////////////////////////////////////////////
 
 class SOCOMD_Supply_Empty : Box_NATO_Wps_F {
-	scope = private;
+	scope = SCOPE_PRIVATE;
 	author = AUTHOR_STR;
 	displayName = "[SUPPLY] Empty";
 	editorCategory = EdCat_Supplies;

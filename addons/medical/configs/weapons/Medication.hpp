@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\medical\script_component.hpp"
+    
 
 class ACE_atropine;
 class ACE_morphine : ACE_ItemCore {

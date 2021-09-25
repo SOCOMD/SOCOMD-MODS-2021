@@ -3,10 +3,10 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {};
+        units[] = {"SOCOMD_QStore_LOWVIS","SOCOMD_QStore_RUS","SOCOMD_QStore"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"socomd_main"};
+        requiredAddons[] = {"socomd_core"};
         author = "";
         authors[] = {"SOCOMD J4"};
         VERSION_CONFIG;
@@ -14,3 +14,5 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"

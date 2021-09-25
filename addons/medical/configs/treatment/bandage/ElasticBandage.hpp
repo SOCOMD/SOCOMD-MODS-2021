@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\medical\script_component.hpp"
+    
 class ElasticBandage: FieldDressing {
     class Abrasion {
         effectiveness=0.2;

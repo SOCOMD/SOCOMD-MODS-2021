@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class FLAG_ADFU_F: FLAG_NATO_F
 {
 	scope = SCOPE_PUBLIC;

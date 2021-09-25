@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 
 #define QSTORE_ACTION_GRP_BEGIN(GRP_ID, DISPLAY_STR) \
 class SOCOMD_ACTION_GRP_##GRP_ID { \
@@ -86,7 +86,7 @@ class SOCOMD_ACTION_NVG_##NVG { \
 class Land_PaperBox_closed_F;
 class SOCOMD_QStore_Base : Land_PaperBox_closed_F {
 	scope = SCOPE_PROTECTED;
-	scopeCurator = private;
+	scopeCurator = SCOPE_PRIVATE;
 	editorCategory = EdCat_Supplies;
 	editorSubcategory = SOCOMD_EdSubcat_Supply_SOCOMD;
 	author = AUTHOR_STR;

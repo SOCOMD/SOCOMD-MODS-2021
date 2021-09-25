@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\medical\script_component.hpp"
+    
 class CfgWeapons {
     class ItemCore;
     class ACE_ItemCore;

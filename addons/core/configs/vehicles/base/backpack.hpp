@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class Kit_Bag_R_MC;
 class KIT_BAG_MC;
 class SOG_BAG_recon_MC;

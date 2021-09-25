@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class SOCOMD_Item_Backpack_PatrolLeader             : Kit_Bag_R_MC {};
 class SOCOMD_Item_Backpack_TroopLeader              : Kit_Bag_R_MC {};
 class SOCOMD_Item_Backpack_Rifleman                 : SOG_BAG_MC {};

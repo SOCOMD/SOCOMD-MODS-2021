@@ -38,7 +38,7 @@ hasPeltorsOn = 0;
  },[_entry]] call CBA_fnc_waitUntilAndExecute;
 
  this addEventHandler ["CuratorWaypointPlaced", {
-	params ["_curator", "_group", "_waypointID"];
+    params ["_curator", "_group", "_waypointID"];
     if(hasInterface) then {
         _group setGroupOwner _curator;
     };

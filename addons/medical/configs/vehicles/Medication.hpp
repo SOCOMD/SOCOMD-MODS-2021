@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\medical\script_component.hpp"
+    
 class SOCOMD_MorphineItem : Item_Base_F {
     scope=SCOPE_PUBLIC;
     scopeCurator=SCOPE_PUBLIC;

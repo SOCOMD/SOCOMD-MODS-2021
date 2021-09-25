@@ -1,4 +1,4 @@
-#include "\z\socomd\addons\core\script_component.hpp"
+    
 class SOCOMD_Void_Box : B_supplyCrate_F {
 	scope = SCOPE_PUBLIC;
 	scopeCurator = SCOPE_PUBLIC;
