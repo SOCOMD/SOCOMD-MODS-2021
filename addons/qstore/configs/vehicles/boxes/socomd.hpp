@@ -24,8 +24,8 @@ class SOCOMD_QStore_Base : Land_PaperBox_closed_F {
 
 
 class SOCOMD_QStore_A : SOCOMD_QStore_Base {
-    scope = SCOPE_PUPBLIC;
-    scopeCurator = SCOPE_PUPBLIC;
+    scope = SCOPE_PUBLIC;
+    scopeCurator = SCOPE_PUBLIC;
     author = AUTHOR_STR;
     displayName = "QStore";
 

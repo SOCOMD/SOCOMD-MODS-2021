@@ -1,9 +1,29 @@
-#include "\z\socomd\addons\weapons\script_component.hpp"
+class SMG_05_base_F;
+//Using CBA_9x19_MP5
+class SMG_05_F : SMG_05_base_F {
+	magazineWell[] = {"CBA_9x19_MP5"};
+};
+class bnae_trg42_f_camo1_virtual;
+// class bnae_trg42_f_camo1_virtual_kit : bnae_trg42_f_camo1_virtual {
+// 		 _generalMacro = "bnae_trg42_f_camo1_virtual_kit";
+//     	class LinkedItems {
+//     		class LinkedItemsOptic {
+//     			slot = "CowsSlot";
+//     			item = "bnae_scope_snd_virtual";
+//     		};
+//     		class LinkedItemsUnder {
+//     			slot = "UnderBarrelSlot";
+//     			item = "bnae_bipod_v2_virtual";
+//     		};
+//     	};
+// 	};
+
 class SMA_AssaultBase;
 class SMA_762_RIFLEBASE: SMA_AssaultBase {
     magazineWell[] = {"CBA_762x51_HK417"};
 };
 //Rifle 556 - SMA_30Rnd_556x45_M855A1
+class Rifle_Base_F;
 class SMA_M4afgSTOCK;
 class ACWP_M4A5_base;
 class ACWP_M4A5_145_troy_base;
@@ -342,10 +362,10 @@ class SOCOMD_SSO_AK: CUP_arifle_AK104_railed {
         };
         hiddenSelectionsTextures[]=
         {
-            "\z\socomd\addons\data\\Russian\ak74m_body_camo_co.paa",
-            "\z\socomd\addons\data\\Russian\ak74m_stock_camo_co.paa",
-            "\z\socomd\addons\data\\Russian\ak74m_grip_rail_co.paa",
-            "\z\socomd\addons\data\\Russian\fortisshift_foregrip_co.paa"
+            "\z\socomd\addons\data\Russian\ak74m_body_camo_co.paa",
+            "\z\socomd\addons\data\Russian\ak74m_stock_camo_co.paa",
+            "\z\socomd\addons\data\Russian\ak74m_grip_rail_co.paa",
+            "\z\socomd\addons\data\Russian\fortisshift_foregrip_co.paa"
         };
         magazines[]=
         {

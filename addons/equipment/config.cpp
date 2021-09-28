@@ -16,3 +16,7 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgModuleCategories.hpp"
+
+#include "configs\CfgVehicles.hpp"
+#include "configs\CfgWeapons.hpp"
+#include "configs\CfgAmmo.hpp"

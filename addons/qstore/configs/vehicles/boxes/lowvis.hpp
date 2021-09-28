@@ -1,7 +1,7 @@
     
 class SOCOMD_QStore_LOWVIS : SOCOMD_QStore_Base {
-    scope = SCOPE_PUPBLIC;
-    scopeCurator = SCOPE_PUPBLIC;
+    scope = SCOPE_PUBLIC;
+    scopeCurator = SCOPE_PUBLIC;
     author = AUTHOR_STR;
     displayName = "QStore LOW-VIS";
 
@@ -21,7 +21,7 @@ class SOCOMD_QStore_LOWVIS : SOCOMD_QStore_Base {
             };
             // Select Loadouts
             QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS,"Loadouts")
-                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (2CDO)")
+                QSTORE_ACTION_GRP_BEGIN(SELECT_LOADOUTS_SUB0,"Change Role (LOWVIS)")
                     QSTORE_ACTION_LOADOUT("Commander",SOCOMD_LOWVIS_Commander)
                     QSTORE_ACTION_LOADOUT("Leader",SOCOMD_LOWVIS_Leader)
                     QSTORE_ACTION_LOADOUT("2IC",SOCOMD_LOWVIS_2IC)

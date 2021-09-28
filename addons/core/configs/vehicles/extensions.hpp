@@ -54,15 +54,15 @@ class ACE_ReserveParachute : ACE_NonSteerableParachute {
 class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 	displayName = DISPLAY_STR; \
 	condition = "(alive _player) and ((uniform _player) isKindOf ["#UNIFORM_SOURCE", configFile >> 'CfgWeapons'])"; \
-	statement = "[_player, "#UNIFORM_TARGET"] call SOCOMD_fnc_Action_ReplaceUniform;"; \
+	statement = "[_player, "#UNIFORM_TARGET"] call socomd_core_fnc_Action_ReplaceUniform;"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
-#define QSTORE_ACTION_REPLACE_VEST(ID, DISPLAY_STR, UNIFORM_SOURCE, UNIFORM_TARGET) \
+#define QSTORE_ACTION_REPLACE_VEST(ID, DISPLAY_STR, VEST_SOURCE, VEST_TARGET) \
 class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 	displayName = DISPLAY_STR; \
-	condition = "(alive _player) and ((vest _player) isEqualTo "#UNIFORM_SOURCE""; \
-	statement = "[_player, "#UNIFORM_TARGET"] call SOCOMD_fnc_Action_ReplaceVest;"; \
+	condition = "(alive _player) and ((vest _player) isEqualTo "#VEST_SOURCE")"; \
+	statement = "[_player, "#VEST_TARGET"] call socomd_core_fnc_Action_ReplaceVest;"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
@@ -71,7 +71,7 @@ class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 	displayName = DISPLAY_STR; \
 	condition = "(alive _player) and (isNumber (  configFile >> 'CfgWeapons' >> (uniform _player) >> 'Recon')) and ((getNumber(  configFile >> 'CfgWeapons' >> (uniform _player) >> 'Recon')) == 1)"; \
-	statement = "[_player, true, "#UNIFORM_TARGET"] call SOCOMD_fnc_Action_toggleGhillie;"; \
+	statement = "[_player, true, "#UNIFORM_TARGET"] call socomd_core_fnc_Action_toggleGhillie;"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
@@ -80,7 +80,7 @@ class SOCOMD_ACTION_REPLACE_UNIFORM_##ID { \
 class SOCOMD_ACTION_REPLACE_HEADGEAR_##ID { \
 	displayName = DISPLAY_STR; \
 	condition = "(alive _player) and ((headgear _player) isKindOf ["#HEADGEAR_SOURCE", configFile >> 'CfgWeapons'])"; \
-	statement = "[_player, "#HEADGEAR_TARGET"] call SOCOMD_fnc_Action_ReplaceHeadgear;"; \
+	statement = "[_player, "#HEADGEAR_TARGET"] call socomd_core_fnc_Action_ReplaceHeadgear;"; \
 	exceptions[] = {"isNotInside", "isNotSitting"}; \
 	showDisabled = 0; \
 };
@@ -88,92 +88,92 @@ class SOCOMD_ACTION_REPLACE_HEADGEAR_##ID { \
 class CAManBase : Man {
 	class ACE_SelfActions {
 
-		class ACE_CutParachute {
-			displayName = "$STR_ace_parachute_CutParachute";
-			exceptions[] = {"isNotInside"};
-			condition = "false";
-			statement = "false";
-			showDisabled = 0;
-			priority = 2.9;
-			icon = "\z\ace\addons\parachute\UI\cut_ca.paa";
-			hotkey = "C";
-		};
+		// class ACE_CutParachute {
+		// 	displayName = "$STR_ace_parachute_CutParachute";
+		// 	exceptions[] = {"isNotInside"};
+		// 	condition = "false";
+		// 	statement = "false";
+		// 	showDisabled = 0;
+		// 	priority = 2.9;
+		// 	icon = "\z\ace\addons\parachute\UI\cut_ca.paa";
+		// 	hotkey = "C";
+		// };
 
-		class ACE_MapDagr {
-			displayName = "Dagr Config";
-			icon = "\z\ace\addons\dagr\UI\DAGR_Icon.paa";
-			condition = "visibleMap and ('ACE_DAGR' in (items player))";
-			statement = "call ace_dagr_fnc_menuInit";
-			exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			showDisabled = 0;
+		// class ACE_MapDagr {
+		// 	displayName = "Dagr Config";
+		// 	icon = "\z\ace\addons\dagr\UI\DAGR_Icon.paa";
+		// 	condition = "visibleMap and ('ACE_DAGR' in (items player))";
+		// 	statement = "call ace_dagr_fnc_menuInit";
+		// 	exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	showDisabled = 0;
 
-			class ACE_MapDagr_ALL {
-				displayName = "Prefix ALL";
-				condition = "(count DAGR_Marker_Prefix) <=1";
-				statement = "DAGR_Marker_Prefix = DAGR_Marker_Prefix_ALL";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_ExcalmationMark {
-				displayName = "Prefix !";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""!""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_Hash {
-				displayName = "Prefix #";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""#""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_Dollar {
-				displayName = "Prefix $";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""$""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_Percentage {
-				displayName = "Prefix %";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""%""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_Carrot {
-				displayName = "Prefix ^";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""^""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_And {
-				displayName = "Prefix &";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""&""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_Asterisk {
-				displayName = "Prefix *";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""*""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_Underscore {
-				displayName = "Prefix _";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""_""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_minus {
-				displayName = "Prefix -";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""-""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-			class ACE_MapDagr_plus {
-				displayName = "Prefix +";
-				condition = "(count DAGR_Marker_Prefix) != 1";
-				statement = "DAGR_Marker_Prefix = [""+""]";
-				exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
-			};
-		};
+		// 	class ACE_MapDagr_ALL {
+		// 		displayName = "Prefix ALL";
+		// 		condition = "(count DAGR_Marker_Prefix) <=1";
+		// 		statement = "DAGR_Marker_Prefix = DAGR_Marker_Prefix_ALL";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_ExcalmationMark {
+		// 		displayName = "Prefix !";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""!""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_Hash {
+		// 		displayName = "Prefix #";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""#""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_Dollar {
+		// 		displayName = "Prefix $";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""$""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_Percentage {
+		// 		displayName = "Prefix %";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""%""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_Carrot {
+		// 		displayName = "Prefix ^";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""^""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_And {
+		// 		displayName = "Prefix &";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""&""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_Asterisk {
+		// 		displayName = "Prefix *";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""*""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_Underscore {
+		// 		displayName = "Prefix _";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""_""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_minus {
+		// 		displayName = "Prefix -";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""-""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// 	class ACE_MapDagr_plus {
+		// 		displayName = "Prefix +";
+		// 		condition = "(count DAGR_Marker_Prefix) != 1";
+		// 		statement = "DAGR_Marker_Prefix = [""+""]";
+		// 		exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+		// 	};
+		// };
 
 		class ACE_Equipment {
 
@@ -197,7 +197,7 @@ class CAManBase : Man {
 				class SOCOMD_ACTION_REPLACE_UNIFORM_TO_RECON { 
 					displayName = "Put on uniform"; 
 					condition = "(alive _player) and (isNumber (  configFile >> 'CfgWeapons' >> (uniform _player) >> 'SOCOMD_Ghillie')) and ((getNumber(  configFile >> 'CfgWeapons' >> (uniform _player) >> 'SOCOMD_Ghillie')) == 1)"; 
-					statement = "[_player, false, ''] call SOCOMD_fnc_Action_toggleGhillie;"; 
+					statement = "[_player, false, ''] call socomd_core_fnc_Action_toggleGhillie;"; 
 					exceptions[] = {"isNotInside", "isNotSitting"}; 
 					showDisabled = 0;
 				};
@@ -217,13 +217,13 @@ class CAManBase : Man {
 				class doff_Diving_Gear { 
 					displayName ="Change out of diving gear";
 					condition = "!(_player getVariable ['SOCOMD_stashedGear', false])";
-					statement = "[_player,'Stashing diving gear', true] call SOCOMD_fnc_Action_toggleStashDivingGear";
+					statement = "[_player,'Stashing diving gear', true] call socomd_core_fnc_Action_toggleStashDivingGear";
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
 				class don_Diving_Gear { 
 					displayName ="Put On Diving Gear";
 					condition = "(_player getVariable ['SOCOMD_stashedGear', false]) and ((backpack _player) == 'SOCOMD_drybag_blk')";
-					statement = "[_player,'Putting on diving gear', false] call SOCOMD_fnc_Action_toggleStashDivingGear";
+					statement = "[_player,'Putting on diving gear', false] call socomd_core_fnc_Action_toggleStashDivingGear";
 					exceptions[] = {"isNotInside", "isNotSitting"};
 				};
 				
@@ -313,156 +313,156 @@ class CAManBase : Man {
 			class togglePeltorOn { 
 				displayName ="Turn on peltors";
 				condition = "(hasPeltors == 1) and (hasPeltorsOn == 0)";
-				statement = "[true] call SOCOMD_fnc_Peltor_togglePeltor";
+				statement = "[true] call socomd_core_fnc_Peltor_togglePeltor";
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 			class togglePeltorOff { 
 				displayName ="Turn off peltors";
 				condition = "(hasPeltors == 1) and (hasPeltorsOn == 1)";
-				statement = "[false] call SOCOMD_fnc_Peltor_togglePeltor";
+				statement = "[false] call socomd_core_fnc_Peltor_togglePeltor";
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 		};
 
 		// HALO Specific Actions
-		class SOCOMD_HALO_Functions {
-			displayName = "HALO Actions";
-			condition = "([_player, 0] call SOCOMD_fnc_ActionCondition_HaloActions)";
-			class HALO_Attatch_Base{
+		// class SOCOMD_HALO_Functions {
+		// 	displayName = "HALO Actions";
+		// 	condition = "([_player, 0] call socomd_core_fnc_ActionCondition_HaloActions)";
+		// 	class HALO_Attatch_Base{
 				
-				condition = "([_player, 1] call SOCOMD_fnc_ActionCondition_HaloActions)";
-				displayName = "Attatch signal";
-				class HALO_Attatch_Smoke {
-					displayName = "Smoke";
-					class HALO_Attatch_Smoke_Red{
-						displayName = "Red";
-						statement = "[_player, 'smoke', 'SmokeShellRed'] call SOCOMD_fnc_Action_ConnectSignal";
-					};
-					class HALO_Attatch_Smoke_Blue{
-						displayName = "Blue";
-						statement = "[_player, 'smoke', 'SmokeShellBlue'] call SOCOMD_fnc_Action_ConnectSignal";
-					};
-					class HALO_Attatch_Smoke_Green{
-						displayName = "Green";
-						statement = "[_player, 'smoke', 'SmokeShellGreen'] call SOCOMD_fnc_Action_ConnectSignal";
-					};
-				};
-				class HALO_Attatch_Chem {
-					displayName = "Chemlight";
-					class HALO_Attatch_Smoke_Red{
-						displayName = "Red";
-						statement = "[_player, 'chem', 'chemlight_red'] call SOCOMD_fnc_Action_ConnectSignal";
-					};
-					class HALO_Attatch_Smoke_Blue{
-						displayName = "Blue";
-						statement = "[_player, 'chem', 'chemlight_blue'] call SOCOMD_fnc_Action_ConnectSignal";
-					};
-					class HALO_Attatch_Smoke_Green{
-						displayName = "Green";
-						statement = "[_player, 'chem', 'chemlight_green'] call SOCOMD_fnc_Action_ConnectSignal";
-					};
-				};
-			};
+		// 		condition = "([_player, 1] call socomd_core_fnc_ActionCondition_HaloActions)";
+		// 		displayName = "Attatch signal";
+		// 		class HALO_Attatch_Smoke {
+		// 			displayName = "Smoke";
+		// 			class HALO_Attatch_Smoke_Red{
+		// 				displayName = "Red";
+		// 				statement = "[_player, 'smoke', 'SmokeShellRed'] call socomd_core_fnc_Action_ConnectSignal";
+		// 			};
+		// 			class HALO_Attatch_Smoke_Blue{
+		// 				displayName = "Blue";
+		// 				statement = "[_player, 'smoke', 'SmokeShellBlue'] call socomd_core_fnc_Action_ConnectSignal";
+		// 			};
+		// 			class HALO_Attatch_Smoke_Green{
+		// 				displayName = "Green";
+		// 				statement = "[_player, 'smoke', 'SmokeShellGreen'] call socomd_core_fnc_Action_ConnectSignal";
+		// 			};
+		// 		};
+		// 		class HALO_Attatch_Chem {
+		// 			displayName = "Chemlight";
+		// 			class HALO_Attatch_Smoke_Red{
+		// 				displayName = "Red";
+		// 				statement = "[_player, 'chem', 'chemlight_red'] call socomd_core_fnc_Action_ConnectSignal";
+		// 			};
+		// 			class HALO_Attatch_Smoke_Blue{
+		// 				displayName = "Blue";
+		// 				statement = "[_player, 'chem', 'chemlight_blue'] call socomd_core_fnc_Action_ConnectSignal";
+		// 			};
+		// 			class HALO_Attatch_Smoke_Green{
+		// 				displayName = "Green";
+		// 				statement = "[_player, 'chem', 'chemlight_green'] call socomd_core_fnc_Action_ConnectSignal";
+		// 			};
+		// 		};
+		// 	};
 
-			// Height is based on barometric pressure, conversion is 
-			// 1000 hpa = 363'/110m
-			class HALO_Set_AR3 {
-				condition = "([_player, 1] call SOCOMD_fnc_ActionCondition_HaloActions)";
-				displayName = "Set ARD Alt.";
+		// 	// Height is based on barometric pressure, conversion is 
+		// 	// 1000 hpa = 363'/110m
+		// 	class HALO_Set_AR3 {
+		// 		condition = "([_player, 1] call socomd_core_fnc_ActionCondition_HaloActions)";
+		// 		displayName = "Set ARD Alt.";
 				
-				class HALO_Set_AR3_100 {
-					displayName = "~ 100m AGL ";
-					statement = "[1001,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};				
-				class HALO_Set_AR3_150 {
-					displayName = "~ 150m AGL ";
-					statement = "[995,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_200 {
-					displayName = "~ 200m AGL";
-					statement = "[990,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_250 {
-					displayName = "~ 250m AGL";
-					statement = "[983,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_300 {
-					displayName = "~ 300m AGL";
-					statement = "[978,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_400 {
-					displayName = "~ 400m AGL";
-					statement = "[966,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_500 {
-					displayName = "~ 500m AGL";
-					statement = "[954,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_600 {
-					displayName = "~ 600m AGL";
-					statement = "[943,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_700 {
-					displayName = "~ 700m AGL";
-					statement = "[932,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_800 {
-					displayName = "~ 800m AGL";
-					statement = "[921,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_900 {
-					displayName = "~ 900m AGL";
-					statement = "[910,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_1000 {
-					displayName = "~ 1000m AGL";
-					statement = "[899,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
+		// 		class HALO_Set_AR3_100 {
+		// 			displayName = "~ 100m AGL ";
+		// 			statement = "[1001,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};				
+		// 		class HALO_Set_AR3_150 {
+		// 			displayName = "~ 150m AGL ";
+		// 			statement = "[995,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_200 {
+		// 			displayName = "~ 200m AGL";
+		// 			statement = "[990,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_250 {
+		// 			displayName = "~ 250m AGL";
+		// 			statement = "[983,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_300 {
+		// 			displayName = "~ 300m AGL";
+		// 			statement = "[978,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_400 {
+		// 			displayName = "~ 400m AGL";
+		// 			statement = "[966,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_500 {
+		// 			displayName = "~ 500m AGL";
+		// 			statement = "[954,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_600 {
+		// 			displayName = "~ 600m AGL";
+		// 			statement = "[943,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_700 {
+		// 			displayName = "~ 700m AGL";
+		// 			statement = "[932,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_800 {
+		// 			displayName = "~ 800m AGL";
+		// 			statement = "[921,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_900 {
+		// 			displayName = "~ 900m AGL";
+		// 			statement = "[910,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_1000 {
+		// 			displayName = "~ 1000m AGL";
+		// 			statement = "[899,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
 				
-				class HALO_Set_AR3_1200 {
-					displayName = "~ 1200m AGL";
-					statement = "[877,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
+		// 		class HALO_Set_AR3_1200 {
+		// 			displayName = "~ 1200m AGL";
+		// 			statement = "[877,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
 				
-				class HALO_Set_AR3_1500 {
-					displayName = "~ 1500m AGL";
-					statement = "[845,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_1750 {
-					displayName = "~ 1750m AGL";
-					statement = "[820,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-				class HALO_Set_AR3_2000 {
-					displayName = "~ 2000m AGL";
-					statement = "[795,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
-				};
-			};
-			class HALO_Post_landing{
-				condition = "([_player, 2] call SOCOMD_fnc_ActionCondition_HaloActions)";
-				displayName = "Remove Parachite";
-				statement = "player execVM 'vqi_halo\VQI-DemonDropper\Landing\vqi_halo_chuteonground.sqf';";
-			};
-		};
+		// 		class HALO_Set_AR3_1500 {
+		// 			displayName = "~ 1500m AGL";
+		// 			statement = "[845,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_1750 {
+		// 			displayName = "~ 1750m AGL";
+		// 			statement = "[820,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 		class HALO_Set_AR3_2000 {
+		// 			displayName = "~ 2000m AGL";
+		// 			statement = "[795,player] execVM 'vqi_halo\VQI-DemonDropper\Equipment\AAD\AR3\vqi_halo_ar3_set_hpa.sqf';";
+		// 		};
+		// 	};
+		// 	class HALO_Post_landing{
+		// 		condition = "([_player, 2] call socomd_core_fnc_ActionCondition_HaloActions)";
+		// 		displayName = "Remove Parachite";
+		// 		statement = "player execVM 'vqi_halo\VQI-DemonDropper\Landing\vqi_halo_chuteonground.sqf';";
+		// 	};
+		// };
 		class SOCOMD_Admin {
 			displayName = "Admin";
-			condition = "([_player] call SOCOMD_fnc_ActionCondition_IsAdmin) and (alive _player)";
+			condition = "([_player] call socomd_core_fnc_ActionCondition_IsAdmin) and (alive _player)";
 			showDisabled = 0;
 			exceptions[] = {"isNotInside", "isNotSitting"};
 
 			class SOCOMD_EnterSpectator {
 				displayName = "Spectate";
-				condition = "([_player] call SOCOMD_fnc_ActionCondition_IsAdmin) and (alive _player)";
-				statement = "[_player] call SOCOMD_fnc_Action_EnterSpectator;";
+				condition = "([_player] call socomd_core_fnc_ActionCondition_IsAdmin) and (alive _player)";
+				statement = "[_player] call socomd_core_fnc_Action_EnterSpectator;";
 				showDisabled = 0;
 				exceptions[] = {"isNotInside", "isNotSitting"};
 			};
 		};
 		class SOCOMD_Gcam {
 			displayName = "Enter Gcam";
-			condition = "([_player] call SOCOMD_fnc_ActionCondition_GcamLoaded) and (alive _player)";
+			condition = "([_player] call socomd_core_fnc_ActionCondition_GcamLoaded) and (alive _player)";
 			showDisabled = 0;
 			exceptions[] = {"isNotInside", "isNotSitting"};
-			statement = "[_player] call SOCOMD_fnc_Action_gcamxecVM;";
+			statement = "[_player] call socomd_core_fnc_Action_gcamxecVM;";
 
 		};
 	};
@@ -470,8 +470,8 @@ class CAManBase : Man {
 		class ACE_Head{
 			class Blindfold{
 				displayName="Blindfold";
-				condition="[_player,_target] call SOCOMD_fnc_ActionCondition_canInteract";
-				statement="[_player,_target] call SOCOMD_fnc_Action_putBlindfoldOn";
+				condition="[_player,_target] call socomd_core_fnc_ActionCondition_canInteract";
+				statement="[_player,_target] call socomd_core_fnc_Action_putBlindfoldOn";
 				showDisabled=0;
 				priority=1;
 				distance=2;

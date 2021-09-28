@@ -1,4 +1,3 @@
-#include "\z\socomd\addons\loadouts\script_component.hpp"
 ///Counter Terrorism
 class TAGE_TroopLeader
 {

@@ -1,4 +1,3 @@
-#include "\z\socomd\addons\loadouts\script_component.hpp"
 class CfgLoadoutWeapons {
     class Rifle_556;
     class SMA_M4afgSTOCK : Rifle_556 {};
@@ -213,7 +212,7 @@ class CfgLoadoutWeapons {
             {"tf47_m3maaws_HE", 1}
         };
     };
-    
+    class Recon_338;
     class bnae_trg42_camo2_virtual : Recon_338{};
     class bnae_trg42_virtual : Recon_338 {};
     class bnae_trg42_camo1_virtual : Recon_338 {};
@@ -269,6 +268,7 @@ class CfgLoadoutWeapons {
     };
 
     // SSO WEAPONS 
+    class Rifle_545;
     class SOCOMD_SSO_AK : Rifle_545 {};
     class AGE_AK105 : Rifle_545 {};
     class AGE_AK105_Camo : Rifle_545 {};
@@ -279,16 +279,14 @@ class CfgLoadoutWeapons {
     class AGE_AK74M_V_Q : Rifle_545 {};
     class CUP_arifle_AKS74U_top_rail : Rifle_545 {};
 
-
-    
+    class Sniper_762x54R;
     class CUP_srifle_SVD_des_top_rail : Sniper_762x54R {};
     class CUP_srifle_SVD_wdl_top_rail : Sniper_762x54R {};
     class CUP_srifle_SVD_top_rail : Sniper_762x54R {};
 
-
-    class SSO_Rifle_338
-    class AGE_OrsisT5000 : Rifle_338 {};
-    class AGE_OrsisT5000_Camo : Rifle_338 {};
-    class AGE_OrsisT5000_Snow : Rifle_338 {};
+    class SSO_Rifle_338;
+    class AGE_OrsisT5000 : SSO_Rifle_338 {};
+    class AGE_OrsisT5000_Camo : SSO_Rifle_338 {};
+    class AGE_OrsisT5000_Snow : SSO_Rifle_338 {};
 
 };

@@ -265,8 +265,8 @@ class SOCOMD_Survival: b_soldier_survival_F
 	};
 	hiddenUnderwaterSelectionsTextures[]=
 	{
-		"\z\socomd\addons\data\\uniform\clothes\black_flipers.paa",
-		"\z\socomd\addons\data\\uniform\clothes\black_flipers.paa",
+		"\z\socomd\addons\data\uniform\clothes\black_flipers.paa",
+		"\z\socomd\addons\data\uniform\clothes\black_flipers.paa",
 		"\A3\characters_f\data\visors_ca.paa"
 	};
 	hiddenSelections[]=
@@ -279,7 +279,7 @@ class SOCOMD_Survival: b_soldier_survival_F
 	hiddenSelectionsTextures[]=
 	{
 		"\ADFU_Units_MC\data\u_g3_mc_co.paa",
-		"\z\socomd\addons\data\\uniform\clothes\black_boots.paa",
+		"\z\socomd\addons\data\uniform\clothes\black_boots.paa",
 		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
 	};
 	hiddenSelectionsMaterials[]=
@@ -304,8 +304,8 @@ class SOCOMD_Survival_AMCU: SOCOMD_Survival {
 	};
 	hiddenUnderwaterSelectionsTextures[]=
 	{
-		"\z\socomd\addons\data\\uniform\clothes\black_flipers.paa",
-		"\z\socomd\addons\data\\uniform\clothes\black_flipers.paa",
+		"\z\socomd\addons\data\uniform\clothes\black_flipers.paa",
+		"\z\socomd\addons\data\uniform\clothes\black_flipers.paa",
 		"\A3\characters_f\data\visors_ca.paa"
 	};
 	hiddenSelections[]=
@@ -318,7 +318,7 @@ class SOCOMD_Survival_AMCU: SOCOMD_Survival {
 	hiddenSelectionsTextures[]=
 	{
 		"\z\socomd\addons\data\CTgear\u_g3_amc_co.paa",
-		"\z\socomd\addons\data\\uniform\clothes\black_boots.paa",
+		"\z\socomd\addons\data\uniform\clothes\black_boots.paa",
 		"\A3\Characters_F\Common\Data\basicbody_brown_co.paa"
 	};
 	hiddenSelectionsMaterials[]=

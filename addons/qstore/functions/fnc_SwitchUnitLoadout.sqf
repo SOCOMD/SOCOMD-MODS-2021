@@ -1,7 +1,5 @@
 #include "script_component.hpp"
-_args = _this;
-_player = _args select 0;
-_loadoutId = _args select 1;
+params ["_player","_loadoutId"];
 
 _unitConfig = (missionConfigFile >> "CfgLoadouts" >> "SOCOMD" >> _loadoutId);
 if(isNull _unitConfig) then {
@@ -52,7 +50,7 @@ _uniformConfig = (_unitConfig >> "Uniform");
 _uniformLoadout = _unitLoadout select 3;
 if(not isNull _uniformConfig) then
 {
-    _uniformType = [] call SOCOMD_fnc_GetWorldUniform;
+    _uniformType = call FUNC(GetWorldUniform);
     _loadoutUniformType = getText (_uniformConfig >> "type");
     if(!(_loadoutUniformType == "")) then {
         _uniformType = _loadoutUniformType;
@@ -182,7 +180,7 @@ _unitLoadout set [9, _equipmentLoadout];
 
 _player setVariable ["SOCOMD_stashedGear", false];
 _player setVariable ["SOCOMD_hasDivingGear", false];
-[_player, _unitLoadout] call EFUNC(core,SetUnitLoadout);
+[_player, _unitLoadout] call FUNC(SetUnitLoadout);
 [_player, _loadoutId,_unitConfig] call FUNC(UpdateArsenalContent);
 
 // Custom Arsenal code

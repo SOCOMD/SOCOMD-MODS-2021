@@ -53,7 +53,7 @@ else {
 
 _unitLoadout set [0, _primaryLoadout];
 
-[_player, _unitLoadout] call EFUNC(core,SetUnitLoadout);
+[_player, _unitLoadout] call FUNC(SetUnitLoadout);
 
 //Give Magazines
 _loadoutId = _player getVariable ["SOCOMD_LOADOUTID","failed"];

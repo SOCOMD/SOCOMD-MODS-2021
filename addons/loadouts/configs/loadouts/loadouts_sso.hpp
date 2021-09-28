@@ -1,9 +1,8 @@
-#include "\z\socomd\addons\loadouts\script_component.hpp"
 ///Russian SSO (DMOCOS)
     
 class SOCOMD_SSO_Commander {
     primary            = "SOCOMD_SSO_AK_GL";
-    handgun            = "";
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -52,7 +51,7 @@ class SOCOMD_SSO_Commander {
 
 class SOCOMD_SSO_Leader {
     primary            = "SOCOMD_SSO_AK_GL";
-    handgun            = "";
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -101,7 +100,7 @@ class SOCOMD_SSO_2IC : SOCOMD_Leader {};
 
 class SOCOMD_SSO_Rifleman {
     primary            = "SOCOMD_SSO_AK";
-    handgun            = "";
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -140,7 +139,7 @@ class SOCOMD_SSO_Rifleman {
 // Breacher
 class SOCOMD_SSO_Breacher {
     primary            = "SOCOMD_SSO_AK";
-    handgun            = "";
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -180,7 +179,7 @@ class SOCOMD_SSO_Breacher {
 // Marksman
 class SOCOMD_SSO_Marksman {
     primary            = "CUP_srifle_SVD_top_rail";
-    secondary        = ITEM_SECONDARY_MARKSMAN;
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -217,7 +216,7 @@ class SOCOMD_SSO_Marksman {
 
 class SOCOMD_SSO_Sapper {
     primary            = "SOCOMD_SSO_AK";
-    secondary        = ITEM_SECONDARY_SAPPER;
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -264,7 +263,7 @@ class SOCOMD_SSO_Sapper {
 
 class SOCOMD_SSO_MachineGunner {
     primary            = "SOCOMD_SSO_RPK";
-    secondary        = ITEM_SECONDARY_MACHINEGUNNER;
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -301,7 +300,7 @@ class SOCOMD_SSO_MachineGunner {
 
 class SOCOMD_SSO_Medic {
     primary            = "SOCOMD_SSO_AK";
-    secondary        = ITEM_SECONDARY_MEDIC;
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -365,7 +364,7 @@ class SOCOMD_SSO_Medic {
 
 class SOCOMD_SSO_AO{
     primary            = "SOCOMD_SSO_AK";
-    secondary        = ITEM_SECONDARY_MEDIC;
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -473,7 +472,7 @@ class SOCOMD_SSO_AT_Assistant : SOCOMD_AT {
 
 class SOCOMD_SSO_Recon {
     primary            = "AGE_OrsisT5000";
-    secondary        = ITEM_SECONDARY_RECON;
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "AGE_Fast_Tan_C_H_A";
@@ -513,7 +512,7 @@ class SOCOMD_SSO_Recon {
 
 class SOCOMD_SSO_Recon_Assistant {
     primary            = "CUP_srifle_SVD_top_rail";
-    secondary        = ITEM_SECONDARY_MARKSMAN;
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear         = "AGE_Fast_Tan_C_H_A";
@@ -557,7 +556,7 @@ class SOCOMD_SSO_Recon_Assistant {
 
 class SOCOMD_SSO_Logistician {
     primary         = "SOCOMD_Weapon_Rifle_556x45";
-    secondary         = "SOCOMD_Weapon_Empty";
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear         = "AGE_Fast_Tan_C_H_A";
@@ -598,13 +597,13 @@ class SOCOMD_SSO_Logistician {
 
 class SOCOMD_SSO_Pilot {
     primary         = "CUP_arifle_AKS74U_top_rail";
-    secondary         = "SOCOMD_Weapon_Empty";
+    secondary            = "";
     handgun            = "acwp_glock17_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear         = "SOCOMD_Headgear_Pilot";
     binocular         = "";
     gps             = "ItemcTab";
-    maxOptic        = PILOT_MAGNIFICATION_LIMIT
+    maxOptic        = PILOT_MAGNIFICATION_LIMIT;
 
     class Uniform {
         type = "SOCOMD_SSO_SleevesDown";

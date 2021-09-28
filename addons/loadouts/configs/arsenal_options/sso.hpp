@@ -1,5 +1,3 @@
-#include "\z\socomd\addons\loadouts\script_component.hpp"
-
 #define SSO_GENERAL_RIFLE \
     "SOCOMD_SSO_AK",\
     "AGE_AK105",\

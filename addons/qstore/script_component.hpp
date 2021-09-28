@@ -1,7 +1,6 @@
 #define COMPONENT qstore
 #define COMPONENT_BEAUTIFIED qstore
 #include "\z\socomd\addons\main\script_mod.hpp"
-#include "\z\socomd\addons\qstore\script_macros.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -17,3 +16,5 @@
 #endif
 
 #include "\z\socomd\addons\main\script_macros.hpp"
+
+#include "script_macros.hpp"

@@ -93,6 +93,10 @@ class _xx_##id { \
 #define ITEM_PILOT_HEADGEAR			        	"SOCOMD_Headgear_Pilot"
 #define ITEM_CREW_HEADGEAR			        	"SOCOMD_Headgear_Crew"
 
+// uniforms
+#define ITEM_DEFAULT_UNIFORM					"USP_G3C_KP_MC_SOCOMD"
+#define ITEM_RECON_UNIFORM						"USP_G3C_KP_MC_RECON"
+
 #define PILOT_MAGNIFICATION_LIMIT				"1x"
 #define LOW_MAGNIFICATION_LIMIT				"2x"
 #define STANDARD_MAGNIFICATION_LIMIT			"4x"

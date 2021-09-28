@@ -51,7 +51,7 @@ else {
 
 _unitLoadout set [2, _primaryLoadout];
 
-[_player, _unitLoadout] call EFUNC(core,SetUnitLoadout);
+[_player, _unitLoadout] call FUNC(SetUnitLoadout);
 
 //Give Magazines
 if(count _loadoutMagazines > 0) then  {

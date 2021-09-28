@@ -1,4 +1,3 @@
-#include "\z\socomd\addons\weapons\script_component.hpp"
 class RH_mak;
 class ACWP_USP;
 

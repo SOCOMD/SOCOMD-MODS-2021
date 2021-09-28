@@ -1,4 +1,3 @@
-#include "\z\socomd\addons\weapons\script_component.hpp"
 #define OPTIC_FOV(FOVMAX,FOVMIN,FOVINIT,ZOOM_MIN,ZOOM_MAX)\
 opticsZoomMin = FOVMIN;\
 opticsZoomMax = FOVMAX;\
@@ -13,7 +12,7 @@ distanceZoomMax = ZOOM_MAX;
 #define OPTIC_4X_OPTIC OPTIC_FOV(0.125,0.125,0.125,100,100)
 
 class InventoryOpticsItem_Base_F;
-
+class ItemCore;
 class RH_t1 : ItemCore {
     class ItemInfo : InventoryOpticsItem_Base_F {
         class OpticsModes {

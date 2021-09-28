@@ -1,4 +1,3 @@
-#include "\z\socomd\addons\equipment\script_component.hpp"
 class InventoryItem_Base_F;
 class SOCOMD_itemcore: ItemCore {
     type=4096;

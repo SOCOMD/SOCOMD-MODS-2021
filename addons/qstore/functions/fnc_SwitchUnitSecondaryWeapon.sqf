@@ -48,7 +48,7 @@ else {
 
 _unitLoadout set [1, _secondaryLoadout];
 
-[_player, _unitLoadout] call EFUNC(core,SetUnitLoadout);
+[_player, _unitLoadout] call FUNC(SetUnitLoadout);
 
 //Give Magazines
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");

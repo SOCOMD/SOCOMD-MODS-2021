@@ -120,4 +120,4 @@ _unitLoadout set [1, _secondaryLoadout];
 _unitLoadout set [2, _handgunLoadout];
 
 
-[_player, _unitLoadout] call EFUNC(core,SetUnitLoadout);
+[_player, _unitLoadout] call FUNC(SetUnitLoadout);

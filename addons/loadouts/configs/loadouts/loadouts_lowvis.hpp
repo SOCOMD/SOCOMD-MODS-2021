@@ -1,9 +1,8 @@
-#include "\z\socomd\addons\loadouts\script_component.hpp"
 ///Russian LOWVIS (DMOCOS)
     
 class SOCOMD_LOWVIS_Commander {
     primary            = "ACWP_M4A5_145_7rail_GL";
-    handgun            = "";
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "ADFU_H_Airframe_Cover_05_MC";
@@ -51,7 +50,7 @@ class SOCOMD_LOWVIS_Commander {
 
 class SOCOMD_LOWVIS_Leader {
     primary            = "ACWP_M4A5_145_7rail_GL";
-    handgun            = "";
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "ADFU_H_Airframe_Cover_05_MC";
@@ -100,7 +99,7 @@ class SOCOMD_LOWVIS_2IC : SOCOMD_Leader {};
 
 class SOCOMD_LOWVIS_Rifleman {
     primary            = "ACWP_M4A5_145_troy_base";
-    handgun            = "";
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "ADFU_H_Airframe_Cover_05_MC";
@@ -139,7 +138,7 @@ class SOCOMD_LOWVIS_Rifleman {
 // Breacher
 class SOCOMD_LOWVIS_Breacher {
     primary            = "ACWP_M4A5_145_troy_base";
-    handgun            = "";
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "ADFU_H_Airframe_Cover_05_MC";
@@ -216,7 +215,7 @@ class SOCOMD_LOWVIS_Marksman {
 
 class SOCOMD_LOWVIS_Sapper {
     primary            = "ACWP_M4A5_145_troy_base";
-    secondary        = ITEM_SECONDARY_SAPPER;
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "ADFU_H_Airframe_Cover_05_MC";
@@ -263,7 +262,7 @@ class SOCOMD_LOWVIS_Sapper {
 
 class SOCOMD_LOWVIS_MachineGunner {
     primary            = "CUP_lmg_L110A1_railed";
-    secondary        = ITEM_SECONDARY_MACHINEGUNNER;
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "ADFU_H_Airframe_Cover_05_MC";
@@ -300,7 +299,7 @@ class SOCOMD_LOWVIS_MachineGunner {
 
 class SOCOMD_LOWVIS_Medic {
     primary            = "ACWP_M4A5_145_troy_base";
-    secondary        = ITEM_SECONDARY_MEDIC;
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "ADFU_H_Airframe_Cover_05_MC";
@@ -364,7 +363,7 @@ class SOCOMD_LOWVIS_Medic {
 
 class SOCOMD_LOWVIS_AO{
     primary            = "ACWP_M4A5_145_troy_base";
-    secondary        = ITEM_SECONDARY_MEDIC;
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "ADFU_H_Airframe_Cover_05_MC";
@@ -472,7 +471,7 @@ class SOCOMD_LOWVIS_AT_Assistant : SOCOMD_AT {
 
 class SOCOMD_LOWVIS_Recon {
     primary            = "bnae_trg42_camo2_virtual";
-    secondary        = ITEM_SECONDARY_RECON;
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear        = "ADFU_H_Airframe_Cover_05_MC";
@@ -512,7 +511,7 @@ class SOCOMD_LOWVIS_Recon {
 
 class SOCOMD_LOWVIS_Recon_Assistant {
     primary            = "ACWP_sr25";
-    secondary        = ITEM_SECONDARY_MARKSMAN;
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear         = "ADFU_H_Airframe_Cover_05_MC";
@@ -556,7 +555,7 @@ class SOCOMD_LOWVIS_Recon_Assistant {
 
 class SOCOMD_LOWVIS_Logistician {
     primary         = "ACWP_M4A5_145_troy_base";
-    secondary         = "SOCOMD_Weapon_Empty";
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear         = "ADFU_H_Airframe_Cover_05_MC";
@@ -597,13 +596,13 @@ class SOCOMD_LOWVIS_Logistician {
 
 class SOCOMD_LOWVIS_Pilot {
     primary         = "CUP_smg_MP5A5";
-    secondary         = "SOCOMD_Weapon_Empty";
+    secondary            = "";
     handgun            = "acwp_glock19_black";
     handgunMagazine = "ACWP_19Rnd_9x21_Mag_glock";
     headgear         = "SOCOMD_Headgear_Pilot";
     binocular         = "";
     gps             = "ItemcTab";
-    maxOptic        = PILOT_MAGNIFICATION_LIMIT
+    maxOptic        = PILOT_MAGNIFICATION_LIMIT;
 
     class Uniform {
         type = "CUP_I_B_PMC_Unit_42";

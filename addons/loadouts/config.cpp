@@ -16,3 +16,7 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgModuleCategories.hpp"
+
+#include "configs/CfgArsenalOptions.hpp"
+#include "configs/CfgLoadoutWeapons.hpp"
+#include "configs/CfgLoadouts.hpp"

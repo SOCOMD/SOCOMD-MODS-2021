@@ -1,4 +1,3 @@
-#include "\z\socomd\addons\weapons\script_component.hpp"
 class HAFM_LAW; //LAT
 class tf47_m3maaws; //MAT
 class SOCOMD_Carl_Gustav : tf47_m3maaws {
@@ -24,6 +23,7 @@ class SOCOMD_LAW_Loaded : CUP_launch_M72A6_Loaded {
 class SOCOMD_LAW: SOCOMD_LAW_Loaded
 {
     author = "$STR_CUP_AUTHOR_STRING";
+    displayName = "[SOCOMD] M72 LAW";
     baseWeapon = "SOCOMD_LAW";
     scope = 2;
     scopeArsenal = 2;
@@ -38,7 +38,7 @@ class SOCOMD_LAW_Used: SOCOMD_LAW_Loaded
     model = "\CUP\Weapons\CUP_Weapons_M72A6\CUP_m72a6_used.p3d";
     class WeaponSlotsInfo: WeaponSlotsInfo
     {
-        mass = 17.3;
+        mass = 8.3;
     };
 };
 

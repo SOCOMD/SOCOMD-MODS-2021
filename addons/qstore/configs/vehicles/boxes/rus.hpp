@@ -1,7 +1,7 @@
     
 class SOCOMD_QStore_RUS : SOCOMD_QStore_Base {
-    scope = SCOPE_PUPBLIC;
-    scopeCurator = SCOPE_PUPBLIC;
+    scope = SCOPE_PUBLIC;
+    scopeCurator = SCOPE_PUBLIC;
     author = AUTHOR_STR;
     displayName = "QStore RUS";
 

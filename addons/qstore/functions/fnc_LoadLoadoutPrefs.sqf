@@ -80,6 +80,6 @@ if(count _handgunItem == 7) then {
     _unitLoadout set [2, _handgunLoadout];
 };
 
-[_player, _unitLoadout] call EFUNC(core,SetUnitLoadout);
+[_player, _unitLoadout] call FUNC(SetUnitLoadout);
 
 systemChat "Loadout Loaded";

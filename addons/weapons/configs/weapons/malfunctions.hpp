@@ -1,4 +1,3 @@
-#include "\z\socomd\addons\weapons\script_component.hpp"
 #define BROKEN_WEAPON(weaponName) \
 class weaponName; \
 class broken_##weaponName : weaponName { \

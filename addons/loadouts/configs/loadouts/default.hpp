@@ -1,4 +1,3 @@
-#include "\z\socomd\addons\loadouts\script_component.hpp"
 ///Standard SOCOMD
 //////////////////////////////////////////////////////////////////////
 //Common loadout items
@@ -131,6 +130,7 @@ class SOCOMD_Unarmed {
     maxOptic  = "1x";
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
         };
@@ -142,8 +142,8 @@ class SOCOMD_Unarmed {
 
 class SOCOMD_Commander {
     primary            = ITEM_PRIMARY_GL;
-    handgun            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN
+    secondary            = "";
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
@@ -151,6 +151,7 @@ class SOCOMD_Commander {
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -186,8 +187,8 @@ class SOCOMD_Commander {
 };
 class SOCOMD_TACP {
     primary            = ITEM_PRIMARY_GL;
-    handgun            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN
+    secondary            = "";
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "Laserdesignator";
@@ -195,6 +196,7 @@ class SOCOMD_TACP {
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -231,8 +233,8 @@ class SOCOMD_TACP {
 
 class SOCOMD_Leader {
     primary            = ITEM_PRIMARY_GL;
-    handgun            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN
+    secondary            = "";
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
@@ -240,6 +242,7 @@ class SOCOMD_Leader {
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -279,8 +282,8 @@ class SOCOMD_2IC : SOCOMD_Leader {};
 
 class SOCOMD_Rifleman {
     primary            = ITEM_PRIMARY_M4;
-    handgun            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN
+    secondary            = "";
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -288,6 +291,7 @@ class SOCOMD_Rifleman {
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -318,8 +322,8 @@ class SOCOMD_Rifleman {
 // Breacher
 class SOCOMD_Breacher {
     primary            = ITEM_PRIMARY_M4;
-    handgun            = "";
-    handgun            = ITEM_DEFAULT_HANDGUN
+    secondary            = "";
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -327,6 +331,7 @@ class SOCOMD_Breacher {
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -359,7 +364,7 @@ class SOCOMD_Breacher {
 class SOCOMD_Marksman {
     primary            = ITEM_PRIMARY_MARKSMAN;
     secondary        = ITEM_SECONDARY_MARKSMAN;
-    handgun            = ITEM_DEFAULT_HANDGUN
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
@@ -368,6 +373,7 @@ class SOCOMD_Marksman {
     optics[]         = {"rh_leu_mk4","cup_optic_sb_11_4x20_pm","cup_optic_sb_11_4x20_pm_od","cup_optic_sb_11_4x20_pm_tan","hlc_optic_zf95base","rh_anpvs10","rh_accupoint","cup_optic_leupoldmk4","cup_optic_leupoldm3lr""cup_optic_leupoldmk4_mrt_tan","hlc_optic_atacr","hlc_optic_atacr_offset","optic_ams","optic_ams_khk","optic_ams_snd","hlc_optic_leupoldm3a","optic_khs_blk","rh_anpvs10"};
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -396,7 +402,7 @@ class SOCOMD_Marksman {
 class SOCOMD_Sapper {
     primary            = ITEM_PRIMARY_M4;
     secondary        = ITEM_SECONDARY_SAPPER;
-    handgun            = ITEM_DEFAULT_HANDGUN
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -404,6 +410,7 @@ class SOCOMD_Sapper {
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -443,7 +450,7 @@ class SOCOMD_Sapper {
 class SOCOMD_MachineGunner {
     primary            = ITEM_PRIMARY_MACHINEGUN;
     secondary        = ITEM_SECONDARY_MACHINEGUNNER;
-    handgun            = ITEM_DEFAULT_HANDGUN
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -451,6 +458,7 @@ class SOCOMD_MachineGunner {
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -480,7 +488,7 @@ class SOCOMD_MachineGunner {
 class SOCOMD_Medic {
     primary            = ITEM_PRIMARY_M4;
     secondary        = ITEM_SECONDARY_MEDIC;
-    handgun            = ITEM_DEFAULT_HANDGUN
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -488,6 +496,7 @@ class SOCOMD_Medic {
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
         };
@@ -544,7 +553,7 @@ class SOCOMD_Medic {
 class SOCOMD_AO{
     primary            = ITEM_PRIMARY_M4;
     secondary        = ITEM_SECONDARY_MEDIC;
-    handgun            = ITEM_DEFAULT_HANDGUN
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -552,6 +561,7 @@ class SOCOMD_AO{
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_AO_ESSENTIALS
         };
@@ -608,20 +618,20 @@ class SOCOMD_AO{
 
 class SOCOMD_AT {
     primary            = ITEM_PRIMARY_M4;
-    secondary        = ITEM_SECONDARY_MAT;
-    handgun            = ITEM_DEFAULT_HANDGUN
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
-    headgear        = ITEM_DEFAULT_HEADGEAR;
-    binocular        = LEADER_BINOCS;
+    secondary          = ITEM_SECONDARY_MAT;
+    handgun            = ITEM_DEFAULT_HANDGUN;
+    handgunMagazine    = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    headgear           = ITEM_DEFAULT_HEADGEAR;
+    binocular          = LEADER_BINOCS;
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
     optics[]         = {""};
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
-            LOADOUT_ITEM(tf47_optic_m3maaws, 1)
         };
     };
 
@@ -638,6 +648,8 @@ class SOCOMD_AT {
         type = ITEM_BACKPACK_AT;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
+            LOADOUT_ITEM(tf47_m3maaws_HEAT, 1)
+            LOADOUT_ITEM(tf47_m3maaws_HE, 1)
         };
     };
 };
@@ -648,7 +660,7 @@ class SOCOMD_AT {
 class SOCOMD_Recon {
     primary            = ITEM_PRIMARY_RECON;
     secondary        = ITEM_SECONDARY_RECON;
-    handgun            = ITEM_DEFAULT_HANDGUN
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
@@ -656,7 +668,7 @@ class SOCOMD_Recon {
     //optics[]         = {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
 
     class Uniform {
-        type = ITEM_UNIFORM_RECON;
+        type = ITEM_RECON_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -686,46 +698,6 @@ class SOCOMD_Recon {
 };
 
 
-class SOCOMD_Recon_Assistant {
-    primary            = ITEM_PRIMARY_MARKSMAN;
-    secondary        = ITEM_SECONDARY_MARKSMAN;
-    handgun            = ITEM_DEFAULT_HANDGUN
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
-    headgear        = ITEM_DEFAULT_HEADGEAR;
-    binocular        = LEADER_BINOCS;
-    gps                = "";
-    maxOptic        = MARKSMAN_MAGNIFICATION_LIMIT;
-    optics[]         = {"hlc_optic_DocterV", "hlc_optic_RomeoV", "optic_LRPS", "bnae_scope_blk_virtual", "bnae_scope_snd_virtual", "bnae_scope_mtp_virtual", "bnae_scope_v2_virtual", "optic_KHS_tan", "optic_KHS_tan", "optic_AMS", "optic_AMS_snd", "optic_AMS_khk", "optic_SOS", "RH_anpvs10"};
-
-    class Uniform {
-        type = ITEM_UNIFORM_RECON;
-        class Inventory    {
-            LOADOUT_UNIFORM_ESSENTIALS
-            LOADOUT_STANDARD_MEDICAL
-            LOADOUT_ITEM(ACE_Kestrel4500, 1)
-            LOADOUT_ITEM(ACE_RangeCard, 1)
-        };
-    };
-
-    class Vest {
-        type = ITEM_VEST_RECON;
-        class Inventory    {
-            LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(Laserdesignator, 1)
-            LOADOUT_ITEM(ACE_ATragMX, 1)
-        };
-    };
-
-    class Backpack {
-        type = ITEM_BACKPACK_RECON;
-        class Inventory    {
-            LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(itc_land_tablet_rover,1)
-            LOADOUT_ITEM(ACE_Tripod, 1)
-            LOADOUT_ITEM(ACRE_PRC152, 1)
-        };
-    };
-};
 
 ////////////////////////////////////////////////////////////////////////////////
 // LOGISTICIAN
@@ -733,7 +705,7 @@ class SOCOMD_Recon_Assistant {
 class SOCOMD_Logistician {
     primary         = ITEM_PRIMARY_M4;
     secondary         = "";
-    handgun            = ITEM_DEFAULT_HANDGUN
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear         = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
@@ -741,6 +713,7 @@ class SOCOMD_Logistician {
     maxOptic        = LOW_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_UNIFORM_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL
@@ -774,14 +747,15 @@ class SOCOMD_Logistician {
 class SOCOMD_Pilot {
     primary         = ITEM_PRIMARY_SMG;
     secondary         = "";
-    handgun            = ITEM_DEFAULT_HANDGUN
+    handgun            = ITEM_DEFAULT_HANDGUN;
     handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
     headgear         = ITEM_PILOT_HEADGEAR;
     binocular         = "";
     gps             = "ItemcTab";
-    maxOptic        = PILOT_MAGNIFICATION_LIMIT
+    maxOptic        = PILOT_MAGNIFICATION_LIMIT;
 
     class Uniform {
+        type = ITEM_DEFAULT_UNIFORM;
         class Inventory    {
             LOADOUT_PILOT_ESSENTIALS
             LOADOUT_STANDARD_MEDICAL

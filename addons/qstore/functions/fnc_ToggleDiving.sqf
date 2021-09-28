@@ -26,7 +26,7 @@ if !(_hasDivingGear) then {
 	_backpackLoadout = _newGear select 5;
 	_backpackLoadout set [0, _switchBackpack]; 
 	_newGear set [5, _backpackLoadout];
-	[_player, _newGear] call EFUNC(core,SetUnitLoadout);
+	[_player, _newGear] call FUNC(SetUnitLoadout);
 	_bagContainer = backpackContainer _player;
 	[_player,_mass,_bagContainer] call EFUNC(core,handleMass);
 	// [_player, _bagContainer, 15] call ace_movement_fnc_addLoadToUnitContainer;

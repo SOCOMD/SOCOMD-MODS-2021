@@ -2,7 +2,7 @@
 class cfgMarkers {
     class ADFU_flag {
         name = "Australian Flag";
-        icon = "\z\socomd\addons\data\\data\ADFU_marker_ca.paa";
+        icon = "\z\socomd\addons\data\data\ADFU_marker_ca.paa";
         color[] = {1,1,1,1};
         size = 32;
         shadow = 0;
