@@ -4,72 +4,72 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-            	// OTHER
-			"FLAG_ADFU_F",
-			"FLAG_ADFOPFOR_F",
-			"SOCOMD_BERET",
+                // OTHER
+            "FLAG_ADFU_F",
+            "FLAG_ADFOPFOR_F",
+            "SOCOMD_BERET",
 
-			//LAND
-			"SOCOMD_APC_A",
-			"SOCOMD_APC_B",
-			"SOCOMD_LR_ATV",
-			// "SOCOMD_APC_C",
-			"SOCOMD_BUSHMASTER_TRANS",
-			"SOCOMD_BUSHMASTER_HMG",
-			"SOCOMD_TRUCK_TRANSPORT_A",
-			"SOCOMD_TRUCK_AMMO_A",
-			"SOCOMD_TRUCK_FUEL_A",
-			"SOCOMD_TRUCK_REPAIR_A",
-			"SOCOMD_BIKE",
-			"SOCOMD_QUADBIKE",
+            //LAND
+            "SOCOMD_APC_A",
+            "SOCOMD_APC_B",
+            "SOCOMD_LR_ATV",
+            // "SOCOMD_APC_C",
+            "SOCOMD_BUSHMASTER_TRANS",
+            "SOCOMD_BUSHMASTER_HMG",
+            "SOCOMD_TRUCK_TRANSPORT_A",
+            "SOCOMD_TRUCK_AMMO_A",
+            "SOCOMD_TRUCK_FUEL_A",
+            "SOCOMD_TRUCK_REPAIR_A",
+            "SOCOMD_BIKE",
+            "SOCOMD_QUADBIKE",
 
-			//AIR
-			"SOCOMD_FIREFLY_A",
-			"SOCOMD_DRAGONFLY_A",
-			"SOCOMD_WARRIOR_A",
-			"SOCOMD_WARRIOR_B",
-			"SOCOMD_NOMAD_A",
-			"SOCOMD_HURRICANE_A",
+            //AIR
+            "SOCOMD_FIREFLY_A",
+            "SOCOMD_DRAGONFLY_A",
+            "SOCOMD_WARRIOR_A",
+            "SOCOMD_WARRIOR_B",
+            "SOCOMD_NOMAD_A",
+            "SOCOMD_HURRICANE_A",
 
-			// SEA
-			"SOCOMD_SHIP_A",
-			"SOCOMD_SHIP_B",
-			"SOCOMD_SHIP_C",
+            // SEA
+            "SOCOMD_SHIP_A",
+            "SOCOMD_SHIP_B",
+            "SOCOMD_SHIP_C",
 
-			// BOXES
-			"SOCOMD_QStore_A",
-			"SOCOMD_Personal_box",
-			"SOCOMD_Training_box",
-			"SOCOMD_Void_Box",
+            // BOXES
+            "SOCOMD_QStore_A",
+            "SOCOMD_Personal_box",
+            "SOCOMD_Training_box",
+            "SOCOMD_Void_Box",
 
-			"SOCOMD_Crate_Empty",
-			"SOCOMD_Crate_Fuel",
-			"SOCOMD_Crate_Hasty",
-			"SOCOMD_Supply_Empty",
-			"SOCOMD_Supply_Ammo",
-			"SOCOMD_Supply_Medical",
-			"SOCOMD_Supply_Gustav",
-			"SOCOMD_Supply_Mortar",
-			"SOCOMD_Supply_Mortar_60mm",
-			"SOCOMD_Supply_HMG",
-			"SOCOMD_Supply_AGL",
-			"SOCOMD_Supply_Javelin",
-			"SOCOMD_Supply_Tools",
-			"SOCOMD_Supply_Vehicle_Ammo",
-			"SOCOMD_Supply_Vehicle_Ammo_Large",
-			"SOCOMD_Recon_Supply",
-			"SOCOMD_Supply_NVG",
-			"SOCOMD_Supply_152",
-			"ACWP_case_m4_gl",
-			"ACWP_case_m4_don",
-			"ACWP_case_sniper",
+            "SOCOMD_Crate_Empty",
+            "SOCOMD_Crate_Fuel",
+            "SOCOMD_Crate_Hasty",
+            "SOCOMD_Supply_Empty",
+            "SOCOMD_Supply_Ammo",
+            "SOCOMD_Supply_Medical",
+            "SOCOMD_Supply_Gustav",
+            "SOCOMD_Supply_Mortar",
+            "SOCOMD_Supply_Mortar_60mm",
+            "SOCOMD_Supply_HMG",
+            "SOCOMD_Supply_AGL",
+            "SOCOMD_Supply_Javelin",
+            "SOCOMD_Supply_Tools",
+            "SOCOMD_Supply_Vehicle_Ammo",
+            "SOCOMD_Supply_Vehicle_Ammo_Large",
+            "SOCOMD_Recon_Supply",
+            "SOCOMD_Supply_NVG",
+            "SOCOMD_Supply_152",
+            "ACWP_case_m4_gl",
+            "ACWP_case_m4_don",
+            "ACWP_case_sniper",
 
-			// MEN
-			"SOCOMD_Unarmed",
-			"SOCOMD_Homestead",
-			"SOCOMD_Rifleman",
-			"SOCOMD_Pilot",
-			"SOCOMD_Crewman"
+            // MEN
+            "SOCOMD_Unarmed",
+            "SOCOMD_Homestead",
+            "SOCOMD_Rifleman",
+            "SOCOMD_Pilot",
+            "SOCOMD_Crewman"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

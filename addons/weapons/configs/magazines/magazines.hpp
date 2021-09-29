@@ -1,3 +1,7 @@
+// vanilla
+class 20Rnd_762x51_Mag;
+class 11Rnd_45ACP_Mag;
+
 //SMA
 class SMA_30Rnd_556x45_M855A1;
 class SMA_30Rnd_556x45_M855A1_Tracer;
@@ -13,6 +17,15 @@ class CUP_150Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M: CUP_100Rnd_TE4_LRT4_White_
     mass = 40;
 };
 
+class SOCOMD_200Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M: CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M{
+    displayName="250rnd Mag 58 Box";
+    count=250;
+    ammo="CUP_B_762x51_Tracer_Red";
+    descriptionShort="Mag 58 200rnd Box 7.62x51";
+    mass=22;
+    tracersEvery=5;
+};
+
 //HLC
 class hlc_5rnd_300WM_FMJ_AWM;
 
@@ -25,7 +38,7 @@ class Recon_Barret_mag : Barret_mag {
 class CUP_30Rnd_9x19_MP5;
 class CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch;
 
-class CA_LauncherMagazine;	// External class reference
+class CA_LauncherMagazine;    // External class reference
 
 class SOCOMD_M72_Rocket : CA_LauncherMagazine {
     scope = 2;
@@ -36,7 +49,7 @@ class SOCOMD_M72_Rocket : CA_LauncherMagazine {
     initSpeed = 40;
     descriptionShort = "LAW M72 Rocket";
     ammo = SOCOMD_M72_AD;
-    type = 2*		256;
+    type = 2*        256;
     mass = 50;
     allowedslots[] = {701, 801, 901};
 };

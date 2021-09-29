@@ -1,7 +1,7 @@
-PREP(Action_ToggleHalo);
 PREP(addHandgunAmmo);
 PREP(addPrimaryAmmo);
 PREP(addSecondaryAmmo);
+PREP(CanToggleDiving);
 PREP(CheckScopeFOV);
 PREP(GetLoadoutMaxOptic);
 PREP(GetLoadoutScopeFOV);
@@ -19,4 +19,5 @@ PREP(SwitchUnitLoadout);
 PREP(SwitchUnitPrimaryWeapon);
 PREP(SwitchUnitSecondaryWeapon);
 PREP(ToggleDiving);
+PREP(ToggleHalo);
 PREP(UpdateArsenalContent);

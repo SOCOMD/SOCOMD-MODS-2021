@@ -2,12 +2,12 @@
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
 
 _blacklist = [
-	"broken_launch_RPG7_F",
-	"broken_CUP_launch_RPG7V",
-	"broken_CUP_launch_RPG7V_NSPU",
-	"broken_CUP_launch_RPG7V_PGO7V",
-	"broken_CUP_launch_RPG7V_PGO7V2",
-	"broken_CUP_launch_RPG7V_PGO7V3"
+    "broken_launch_RPG7_F",
+    "broken_CUP_launch_RPG7V",
+    "broken_CUP_launch_RPG7V_NSPU",
+    "broken_CUP_launch_RPG7V_PGO7V",
+    "broken_CUP_launch_RPG7V_PGO7V2",
+    "broken_CUP_launch_RPG7V_PGO7V3"
 ];
 
 if(_unit != player) exitWith {};
@@ -20,7 +20,7 @@ if(_loadoutId == "") exitWith {};
 _rand = random 100;
 _safe = 0;
 if(_rand < 40) then {
-	_safe = 1;
+    _safe = 1;
 };
 
 if(_safe == 1) exitWith {};

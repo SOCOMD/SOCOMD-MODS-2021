@@ -17,7 +17,7 @@ if (isNil "_door") exitWith {};
 
 //Check if door is glass because then we need to find the proper location of the door so we can use it
 if ((_door find "glass") != -1) then {
-	_door = [10, _target, _door] call ace_interaction_fnc_getGlassDoor;
+    _door = [10, _target, _door] call ace_interaction_fnc_getGlassDoor;
 };
 
 private _an = "";
@@ -25,11 +25,11 @@ private _an = "";
 //check pattern of door animationNames
 private _ans = animationNames _target;
 if (({_x == _door} count _ans) > 0) then {
-	_an = _door + "";
+    _an = _door + "";
 };
 
 if (({_x == "door_1_rot"} count _ans) > 0) then {
-	_an = _door + "_rot";
+    _an = _door + "_rot";
 };
 
 if (_an == "") exitWith {};

@@ -55,7 +55,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_ToggleUndercover";
         displayName = "Toggle Undercover";
-        function = "SOCOMD_fnc_ModuleToggleUndercover";
+        function = "socomd_zeus_fnc_ModuleToggleUndercover";
     };
 
     class SOCOMD_Module_ToggleTranslator : SOCOMD_Module_Base
@@ -65,7 +65,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_ToggleTranslator";
         displayName = "Toggle Translator";
-        function = "SOCOMD_fnc_ModuleToggleTranslator";
+        function = "socomd_zeus_fnc_ModuleToggleTranslator";
     };
 
     class SOCOMD_Module_CopyClipboardLoadout : SOCOMD_Module_Base
@@ -75,7 +75,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_CopyClipboardLoadout";
         displayName = "Copy Loadout";
-        function = "SOCOMD_fnc_ModuleCopyClipboardLoadout";
+        function = "socomd_zeus_fnc_ModuleCopyClipboardLoadout";
     };
 
     class SOCOMD_Module_PasteClipboardLoadout : SOCOMD_Module_Base
@@ -85,7 +85,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_PasteClipboardLoadout";
         displayName = "Paste Loadout";
-        function = "SOCOMD_fnc_ModulePasteClipboardLoadout";
+        function = "socomd_zeus_fnc_ModulePasteClipboardLoadout";
     };
 
     class SOCOMD_Module_Flatten : SOCOMD_Module_Base
@@ -95,7 +95,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_Flatten";
         displayName = "Flatten";
-        function = "SOCOMD_fnc_ModuleFlatten";
+        function = "socomd_zeus_fnc_ModuleFlatten";
     };
 
     class SOCOMD_Module_ConvoyGroup : SOCOMD_Module_Base
@@ -105,7 +105,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_ConvoyGroup";
         displayName = "Convoy Group";
-        function = "SOCOMD_fnc_ModuleConvoyGroup";
+        function = "socomd_zeus_fnc_ModuleConvoyGroup";
     };
 
     class SOCOMD_Module_ShowHitPoints : SOCOMD_Module_Base
@@ -115,7 +115,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_ShowHitPoints";
         displayName = "Show Hit Points";
-        function = "SOCOMD_fnc_ModuleShowHitPoints";
+        function = "socomd_zeus_fnc_ModuleShowHitPoints";
     };
 
     class SOCOMD_Module_JamWeapon : SOCOMD_Module_Base
@@ -125,7 +125,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_JamWeapon";
         displayName = "Jam Weapon";
-        function = "SOCOMD_fnc_ModuleJamWeapon";
+        function = "socomd_zeus_fnc_ModuleJamWeapon";
     };
 
     class SOCOMD_Module_ModuleGenerateUnitConfig : SOCOMD_Module_Base
@@ -135,7 +135,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_ModuleGenerateUnitConfig";
         displayName = "Loadout To Config";
-        function = "SOCOMD_fnc_ModuleGenerateUnitConfig";
+        function = "socomd_zeus_fnc_ModuleGenerateUnitConfig";
     };
 
     class SOCOMD_Module_PowerGrid : SOCOMD_Module_Base
@@ -145,7 +145,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_PowerGrid";
         displayName = "Power Grid";
-        function = "SOCOMD_fnc_ModulePowerGrid";
+        function = "socomd_zeus_fnc_ModulePowerGrid";
     };
     class SOCOMD_Module_PowerGenerator : SOCOMD_Module_Base {
         scope = 2;
@@ -153,7 +153,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_PowerGenerator";
         displayName = "Power Generator";
-        function = "SOCOMD_fnc_ModulePowerGenerator";
+        function = "socomd_zeus_fnc_ModulePowerGenerator";
     };
     class SOCOMD_Module_DisableAI : SOCOMD_Module_Base {
         scope = 2;
@@ -163,7 +163,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_DisableAI";
         displayName = "Disable AI Pathing";
-        function = "SOCOMD_fnc_ModuleDisableAI";
+        function = "socomd_zeus_fnc_ModuleDisableAI";
     };
     class SOCOMD_Module_EnableAI : SOCOMD_Module_Base {
         scope = 2;
@@ -173,7 +173,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_EnableAI";
         displayName = "Enable AI Pathing";
-        function = "SOCOMD_fnc_ModuleEnableAI";
+        function = "socomd_zeus_fnc_ModuleEnableAI";
     };
     class SOCOMD_Module_RevealPlayers : SOCOMD_Module_Base {
         scope = 2;
@@ -183,7 +183,7 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_RevealPlayers";
         displayName = "Reveal Players";
-        function = "SOCOMD_fnc_ModuleRevealPlayers";
+        function = "socomd_zeus_fnc_ModuleRevealPlayers";
     };
     class SOCOMD_Module_ForgetPlayers : SOCOMD_Module_Base {
         scope = 2;
@@ -193,6 +193,6 @@ class CfgVehicles
 
         _generalMacro = "SOCOMD_Module_ForgetPlayers";
         displayName = "Forget Players";
-        function = "SOCOMD_fnc_ModuleForgetPlayers";
+        function = "socomd_zeus_fnc_ModuleForgetPlayers";
     };
 };

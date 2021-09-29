@@ -1,5 +1,5 @@
 class Land;
-	class B_Quadbike_01_F;
+    class B_Quadbike_01_F;
 
     class LandVehicle : Land {
         class Components;

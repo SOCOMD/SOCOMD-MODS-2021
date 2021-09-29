@@ -310,33 +310,33 @@
     "USP_G3C_KP_MC_SOCOMD",\
     "USP_PCU_G3C_KP_MC_SOCOMD",\
     "USP_SOFTSHELL_G3C_KP_MC_SOCOMD",\
-    "USP_PCU_G3C_KP_MC_GRY_SOCOMD",\
-    "USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD",\
-    "USP_OVERWHITE_G3C_KP_MC_SOCOMD"
+    "USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD"
 
 #define AMCU_UNIFORMS \
     "USP_G3C_KP_MC_SOCOMD",\
     "USP_PCU_G3C_KP_MC_SOCOMD",\
     "USP_SOFTSHELL_G3C_KP_MC_SOCOMD",\
+    "USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD"
+
+#define SNOW_UNIFORMS \
     "USP_PCU_G3C_KP_MC_GRY_SOCOMD",\
-    "USP_SOFTSHELL_G3C_KP_MC_GRN_SOCOMD",\
     "USP_OVERWHITE_G3C_KP_MC_SOCOMD"
     
 #define RECON_UNIFORMS \
     "USP_G3C_KP_MC_RECON",\
     "USP_PCU_G3C_KP_MC_RECON",\
     "USP_SOFTSHELL_G3C_KP_MC_RECON",\
-    "USP_OVERWHITE_G3C_KP_MC_RECON",\
-    "USP_PCU_G3C_KP_MC_GRY_RECON",\
     "USP_SOFTSHELL_G3C_KP_MC_GRN_RECON"
 
 #define RECON_AMCU_UNIFORMS \
     "USP_G3C_KP_MC_RECON",\
     "USP_PCU_G3C_KP_MC_RECON",\
     "USP_SOFTSHELL_G3C_KP_MC_RECON",\
-    "USP_OVERWHITE_G3C_KP_MC_RECON",\
-    "USP_PCU_G3C_KP_MC_GRY_RECON",\
     "USP_SOFTSHELL_G3C_KP_MC_GRN_RECON"
+
+#define RECON_SNOW_UNIFORMS \
+    "USP_OVERWHITE_G3C_KP_MC_RECON",\
+    "USP_PCU_G3C_KP_MC_GRY_RECON"
 
 #define PILOT_UNIFORMS \
     "SOLS_tshirt"
@@ -522,6 +522,9 @@
             temperate_uniforms[]={
                 AMCU_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             GENERAL_RIFLE,
@@ -550,6 +553,9 @@
             };
             temperate_uniforms[]={
                 AMCU_UNIFORMS
+            };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
             };
         };
         weapons[]={
@@ -598,6 +604,9 @@
             temperate_uniforms[]={
                 AMCU_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             GENERAL_RIFLE,
@@ -605,7 +614,7 @@
             HANDGUNS
         };
         vests[]={
-    VESTS_COMMON,
+            VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_TL,
             VESTS_WEAPONS
@@ -629,6 +638,9 @@
             temperate_uniforms[]={
                 AMCU_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             GENERAL_RIFLE,
@@ -636,7 +648,7 @@
             HANDGUNS
         };
         vests[]={
-    VESTS_COMMON,
+            VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_TL,
             VESTS_WEAPONS
@@ -657,13 +669,16 @@
             temperate_uniforms[]={
                 AMCU_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             MARKSMAN,
             HANDGUNS
         };
         vests[]={
-    VESTS_COMMON,
+           VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_TL
          };
@@ -682,13 +697,16 @@
             temperate_uniforms[]={
                 AMCU_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             GENERAL_RIFLE,
             HANDGUNS
         };
         vests[]={
-    VESTS_COMMON,
+           VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_TL
          };
@@ -732,13 +750,16 @@
             temperate_uniforms[]={
                 AMCU_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             GENERAL_RIFLE,
             HANDGUNS
         };
         vests[]={
-    VESTS_COMMON,
+            VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_MED
          };
@@ -758,6 +779,9 @@
             temperate_uniforms[]={
                 AMCU_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             GENERAL_RIFLE,
@@ -765,7 +789,7 @@
             LAUNCHERS
         };
         vests[]={
-    VESTS_COMMON,
+            VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_TL
          };
@@ -786,13 +810,16 @@
                 AMCU_UNIFORMS,
                 PILOT_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             HANDGUNS,
             SOLS_RIFLES
         };
         vests[]={
-    VESTS_COMMON,
+            VESTS_COMMON,
             TWO_COMMS_RIGS,
             VESTS_COMMS        
         };
@@ -819,13 +846,16 @@
                 AMCU_UNIFORMS,
                 PILOT_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             HANDGUNS,
             SOLS_RIFLES
         };
         vests[]={
-    VESTS_COMMON,
+            VESTS_COMMON,
             TWO_COMMS_RIGS,
             VESTS_COMMS
          };
@@ -849,13 +879,16 @@
             temperate_uniforms[]={
                 AMCU_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             GENERAL_RIFLE,
             HANDGUNS
         };
         vests[]={
-    VESTS_COMMON,
+            VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_MED,
             VESTS_TL
@@ -876,13 +909,16 @@
             temperate_uniforms[]={
                 AMCU_UNIFORMS
             };
+            snow_uniforms[]={
+                SNOW_UNIFORMS
+            };
         };
         weapons[]={
             GENERAL_RIFLE,
             HANDGUNS
         };
         vests[]={
-    VESTS_COMMON,
+            VESTS_COMMON,
             ONE_COMM_RIGS,
             VESTS_TL
          };
@@ -901,6 +937,9 @@
             temperate_uniforms[]={
                 RECON_UNIFORMS
             };
+            snow_uniforms[]={
+                RECON_SNOW_UNIFORMS
+            };
         };
         weapons[]={
             GENERAL_RIFLE,
@@ -909,34 +948,7 @@
             HANDGUNS
         };
         vests[]={
-    VESTS_COMMON,
-            TWO_COMMS_RIGS,
-            VESTS_COMMS
-         };
-        bags[]={
-            BAGS,
-            BACKPACK_COMMS
-        };
-        grenades[]={
-            GREMADES_NORMAL
-        };    
-    };
-    class SOCOMD_Recon_Assistant{
-        class uniforms{
-            arid_uniforms[]={
-                RECON_UNIFORMS
-            };
-            temperate_uniforms[]={
-                RECON_UNIFORMS
-            };
-        };
-        weapons[]={
-            GENERAL_RIFLE,
-            MARKSMAN,
-            HANDGUNS
-        };
-        vests[]={
-    VESTS_COMMON,
+            VESTS_COMMON,
             TWO_COMMS_RIGS,
             VESTS_COMMS
          };

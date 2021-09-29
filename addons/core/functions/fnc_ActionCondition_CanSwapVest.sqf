@@ -12,13 +12,13 @@ _loadoutId = _player getVariable ["SOCOMD_LOADOUTID", ""];
 _loadoutWhitelist = getArray (_loadoutVestConfig >> "loadoutWhitelist");
 if(count _loadoutWhitelist <= 0) exitWith
 {
-	 _allowed = true;
-	 _allowed
+     _allowed = true;
+     _allowed
 };
 
 if(_loadoutId in _loadoutWhitelist) then
 {
-	_allowed = true;
+    _allowed = true;
 };
 
 _allowed;

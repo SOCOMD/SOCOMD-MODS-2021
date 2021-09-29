@@ -1,28 +1,28 @@
 #include "script_component.hpp"
 /*
-* 	Author: KokaKolaA3
-* 	Modified: Willi "shukari" Graff
+*     Author: KokaKolaA3
+*     Modified: Willi "shukari" Graff
 * 
-* 	Place an object infront of the ACE_player and organise all ACE3 settings
+*     Place an object infront of the ACE_player and organise all ACE3 settings
 *
-* 	Arguments:
-* 		0: Itemename <STRING> 
-* 		1: Objectclassname <STRING>
-*		2: Tool <STRING>
-* 		3: Simulation <BOOL> (optional, default: true)
-* 		4: AttachPoint <ARRAY> (optional, default: [0, 1.5, 0])
+*     Arguments:
+*         0: Itemename <STRING> 
+*         1: Objectclassname <STRING>
+*        2: Tool <STRING>
+*         3: Simulation <BOOL> (optional, default: true)
+*         4: AttachPoint <ARRAY> (optional, default: [0, 1.5, 0])
 *
-* 	Return Value:
-* 	None
+*     Return Value:
+*     None
 *
 */
 
 params [
-	"_item",
-	"_obj",
-	["_tool", ""],
-	["_sim", true],
-	["_attachPos", [0, 1.5, 0]]
+    "_item",
+    "_obj",
+    ["_tool", ""],
+    ["_sim", true],
+    ["_attachPos", [0, 1.5, 0]]
 ];
 
 if (_tool != "" && {!(_tool in (items ACE_player))}) exitWith {systemChat format [localize "STR_PLACE_NeedTool", [_tool] call kka3_fnc_displayName]};
@@ -48,23 +48,23 @@ private _pickupAction = [
     "",
     {
         params ["_target", "_player", "_argumente"];
-		_argumente params ["_item", "_tool"];
-		
-		if (_tool != "" && {!(_tool in (items ACE_player))}) exitWith {systemChat format [localize "STR_PLACE_NeedToolPickUp", [_tool] call kka3_fnc_displayName]};
-		
-		deleteVehicle _target;
+        _argumente params ["_item", "_tool"];
+        
+        if (_tool != "" && {!(_tool in (items ACE_player))}) exitWith {systemChat format [localize "STR_PLACE_NeedToolPickUp", [_tool] call kka3_fnc_displayName]};
+        
+        deleteVehicle _target;
         _player addItem _item;
     },
     {true},
-	nil,
-	[_item, _tool],
-	nil,
-	4
+    nil,
+    [_item, _tool],
+    nil,
+    4
 ] call ace_interact_menu_fnc_createAction;
 
 [
-	_obj,
-	0,
-	["ACE_MainActions"],
-	_pickupAction
+    _obj,
+    0,
+    ["ACE_MainActions"],
+    _pickupAction
 ] remoteExecCall ["ace_interact_menu_fnc_addActionToObject", 0, true];

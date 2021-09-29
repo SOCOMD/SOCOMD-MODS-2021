@@ -1,22 +1,22 @@
 class SMG_05_base_F;
 //Using CBA_9x19_MP5
 class SMG_05_F : SMG_05_base_F {
-	magazineWell[] = {"CBA_9x19_MP5"};
+    magazineWell[] = {"CBA_9x19_MP5"};
 };
 class bnae_trg42_f_camo1_virtual;
 // class bnae_trg42_f_camo1_virtual_kit : bnae_trg42_f_camo1_virtual {
-// 		 _generalMacro = "bnae_trg42_f_camo1_virtual_kit";
-//     	class LinkedItems {
-//     		class LinkedItemsOptic {
-//     			slot = "CowsSlot";
-//     			item = "bnae_scope_snd_virtual";
-//     		};
-//     		class LinkedItemsUnder {
-//     			slot = "UnderBarrelSlot";
-//     			item = "bnae_bipod_v2_virtual";
-//     		};
-//     	};
-// 	};
+//          _generalMacro = "bnae_trg42_f_camo1_virtual_kit";
+//         class LinkedItems {
+//             class LinkedItemsOptic {
+//                 slot = "CowsSlot";
+//                 item = "bnae_scope_snd_virtual";
+//             };
+//             class LinkedItemsUnder {
+//                 slot = "UnderBarrelSlot";
+//                 item = "bnae_bipod_v2_virtual";
+//             };
+//         };
+//     };
 
 class SMA_AssaultBase;
 class SMA_762_RIFLEBASE: SMA_AssaultBase {

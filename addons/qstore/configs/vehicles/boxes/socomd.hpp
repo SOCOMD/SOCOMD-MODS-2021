@@ -67,21 +67,23 @@ class SOCOMD_QStore_A : SOCOMD_QStore_Base {
                     //QSTORE_ACTION_LOADOUT("Recon Asst.",SOCOMD_Recon_Assistant)
                 QSTORE_ACTION_GRP_END
 
-                class SOCOMD_SavePrefs {
-                    displayName = "Save";
-                    condition = "[_player] call SOCOMD_fnc_ActionCondition_HasLoadout";
-                    statement = "[_player] spawn SOCOMD_fnc_SaveLoadoutPrefs";
-                    showDisabled = 0;
-                    exceptions[] = {"isNotInside", "isNotSitting"};
-                };
-
-                class SOCOMD_LoadPrefs {
-                    displayName = "Load";
-                    condition = "[_player] call SOCOMD_fnc_ActionCondition_HasLoadout";
-                    statement = "[_player] spawn SOCOMD_fnc_LoadLoadoutPrefs";
-                    showDisabled = 0;
-                    exceptions[] = {"isNotInside", "isNotSitting"};
-                };
+                
+                QSTORE_ACTION_GRP_BEGIN(SELECT_Customise,"Specialty Gear")
+                    class SOCOMD_Uniforms_ToggleDiving {
+                        displayName = "Toggle Diving Uniform";
+                        condition = "[_player] call socomd_qstore_fnc_CanToggleDiving";
+                        statement = "[_player] call socomd_qstore_fnc_ToggleDiving";
+                        showDisabled = 0;
+                        exceptions[] = {"isNotInside", "isNotSitting"};
+                    };
+                    class SOCOMD_Uniforms_ToggleHalo {
+                        displayName = "Toggle HALO Gear";
+                        condition = "[_player] call SOCOMD_fnc_CanToggleHalo";
+                        statement = "[_player] call SOCOMD_fnc_ToggleHalo";
+                        showDisabled = 0;
+                        exceptions[] = {"isNotInside", "isNotSitting"};
+                    };
+                QSTORE_ACTION_GRP_END
             QSTORE_ACTION_GRP_END
 
         };

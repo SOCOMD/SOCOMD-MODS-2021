@@ -30,7 +30,7 @@ class Eventhandlers;
 ////////////////////
 class NoDust{};
 class CfgVehicles {
-	class Helicopter;
+    class Helicopter;
 
     class Helicopter_Base_F : Helicopter {
         class HitPoints;
@@ -285,8 +285,8 @@ class CfgVehicles {
             };
         };
     };
-	#include "vehicles/firefly.hpp"
-	#include "vehicles/hurricane.hpp"
-	#include "vehicles/nomad.hpp"
-	#include "vehicles/warrior.hpp"
+    #include "vehicles/firefly.hpp"
+    #include "vehicles/hurricane.hpp"
+    #include "vehicles/nomad.hpp"
+    #include "vehicles/warrior.hpp"
 };

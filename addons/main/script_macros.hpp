@@ -1,7 +1,7 @@
 #include "\z\ace\addons\main\script_macros.hpp"
 
 //Scope
-#define SCOPE_PRIVATE	0
+#define SCOPE_PRIVATE    0
 #define SCOPE_PROTECTED 1
 #define SCOPE_PUBLIC 2
 
@@ -26,8 +26,8 @@
 #define UNIT_SOCOMD_PILOT "SOCOMD_Pilot"
 #define UNIT_SOCOMD_CREWMAN "SOCOMD_Crewman"
 
-//#define true			1
-//#define false			0
+//#define true            1
+//#define false            0
 
 
 #define ITEM01(id) id
@@ -63,57 +63,86 @@
 
 #define LOADOUT_ITEM(id, qty) \
 class _xx_##id { \
-	type = #id; \
-	count = qty; \
+    type = #id; \
+    count = qty; \
 };
 
 
 
 // Rifles
-#define ITEM_VEHICLE_M4							"ACWP_M4A5_145_troy_AFG_kit"
+#define ITEM_VEHICLE_M4                            "ACWP_M4A5_145_troy_AFG_kit"
 
-#define ITEM_PRIMARY_GL	    			        "ACWP_M4A5_145_7rail_GL"
-#define ITEM_PRIMARY_M4		         			"ACWP_M4A5_145_troy_base"
-#define ITEM_PRIMARY_MARKSMAN		            "ACWP_sr25"
-#define ITEM_PRIMARY_MACHINEGUN		            "CUP_lmg_minimi_railed"
-#define ITEM_PRIMARY_RECON		                "bnae_falkor_camo1_virtual"
-#define ITEM_PRIMARY_SMG	                    "CUP_smg_MP5A5"
+#define ITEM_PRIMARY_GL                            "ACWP_M4A5_145_7rail_GL"
+#define ITEM_PRIMARY_M4                             "ACWP_M4A5_145_troy_base"
+#define ITEM_PRIMARY_MARKSMAN                    "ACWP_sr25"
+#define ITEM_PRIMARY_MACHINEGUN                    "CUP_lmg_L110A1_railed"
+#define ITEM_PRIMARY_RECON                        "bnae_falkor_camo1_virtual"
+#define ITEM_PRIMARY_SMG                        "CUP_smg_MP5A5"
 #define ITEM_PRIMARY_CREWMAN                    "SMA_Steyr_AUG_F"
 
 #define ITEM_DEFAULT_HANDGUN                    "ACWP_USP"
 #define ITEM_DEFAULT_HANDGUN_MAGAZINE           "ACWP_18Rnd_9x21_Mag_USP"
 
-#define LEADER_BINOCS							"ACE_Vector"
+#define LEADER_BINOCS                            "ACE_Vector"
 
 // Secondary i.e launchers
-#define ITEM_DEFAULT_LAUNCHER		        	"SOCOMD_Carl_Gustav"
+#define ITEM_DEFAULT_LAUNCHER                    "SOCOMD_Carl_Gustav"
 
 // headgear
-#define ITEM_DEFAULT_HEADGEAR			        "acwp_airframe_mc"
-#define ITEM_PILOT_HEADGEAR			        	"SOCOMD_Headgear_Pilot"
-#define ITEM_CREW_HEADGEAR			        	"SOCOMD_Headgear_Crew"
+#define ITEM_DEFAULT_HEADGEAR                    "acwp_airframe_mc"
+#define ITEM_PILOT_HEADGEAR                        "SOCOMD_Headgear_Pilot"
+#define ITEM_CREW_HEADGEAR                        "SOCOMD_Headgear_Crew"
 
 // uniforms
-#define ITEM_DEFAULT_UNIFORM					"USP_G3C_KP_MC_SOCOMD"
-#define ITEM_RECON_UNIFORM						"USP_G3C_KP_MC_RECON"
+#define ITEM_DEFAULT_UNIFORM                    "USP_G3C_KP_MC_SOCOMD"
+#define ITEM_RECON_UNIFORM                        "USP_G3C_KP_MC_RECON"
 
-#define PILOT_MAGNIFICATION_LIMIT				"1x"
-#define LOW_MAGNIFICATION_LIMIT				"2x"
-#define STANDARD_MAGNIFICATION_LIMIT			"4x"
-#define MARKSMAN_MAGNIFICATION_LIMIT			"6x"
+// vests
+#define ITEM_VEST_TROOPLEADER                    "lbt_comms_mc"
+#define ITEM_VEST_PATROLLEADER                    "lbt_comms_mc"
+#define ITEM_VEST_RIFLEMAN                        "lbt_tl_mc"
+#define ITEM_VEST_BREACHER                        "lbt_tl_mc"
+#define ITEM_VEST_MARKSMAN                        "lbt_tl_mc"
+#define ITEM_VEST_MEDIC                            "lbt_medical_mc"
+#define ITEM_VEST_SAPPER                        "lbt_tl_mc"
+#define ITEM_VEST_MACHINEGUNNER                    "acwp_pc_mg_nod"
+#define ITEM_VEST_RECON                            "lbt_comms_mc"
+#define ITEM_VEST_AT                            "lbt_tl_mc"
+#define ITEM_VEST_PILOT                            "lbt_tl_mc"
+#define ITEM_VEST_CREWMAN                        "lbt_tl_mc"
+#define ITEM_VEST_HOMESTEAD                        "lbt_pouchless_mc"
+
+// bags
+#define ITEM_BACKPACK_TROOPLEADER                "Kit_Bag_R_MC"
+#define ITEM_BACKPACK_PATROLLEADER                "Kit_Bag_R_MC"
+#define ITEM_BACKPACK_RIFLEMAN                    "SOG_BAG_MC"
+#define ITEM_BACKPACK_BREACHER                    "Kit_Bag_pince_MC"
+#define ITEM_BACKPACK_MARKSMAN                    "SOG_BAG_MC"
+#define ITEM_BACKPACK_SAPPER                    "SOG_BAG_med_MC"
+#define ITEM_BACKPACK_MACHINEGUNNER                "Kit_Bag_pince_MC"
+#define ITEM_BACKPACK_MEDIC                        "SOG_BAG_MC"
+#define ITEM_BACKPACK_RECON                        "Kit_Bag_R_MC"
+#define ITEM_BACKPACK_AT                        "SOG_BAG_MC"
+#define ITEM_BACKPACK_PILOT                     "SOG_BAG_recon_od"
+#define ITEM_BACKPACK_CREWMAN                   "KIT_BAG_MC"
+
+#define PILOT_MAGNIFICATION_LIMIT                "1x"
+#define LOW_MAGNIFICATION_LIMIT                    "2x"
+#define STANDARD_MAGNIFICATION_LIMIT            "4x"
+#define MARKSMAN_MAGNIFICATION_LIMIT            "6x"
 
 
 // headgear macros
     
 #define HELMET_ARMOR(ARMOR,PASS) \
 class ItemInfo : ItemInfo { \
-	class HitpointsProtectionInfo { \
-		class Head { \
-			armor = ARMOR; \
-			hitPointName = "HitHead"; \
-			passThrough = PASS; \
-		}; \
-	}; \
+    class HitpointsProtectionInfo { \
+        class Head { \
+            armor = ARMOR; \
+            hitPointName = "HitHead"; \
+            passThrough = PASS; \
+        }; \
+    }; \
 };
 
 #define HELMET_ARMOR_STRONG HELMET_ARMOR(12,0.1)
@@ -128,106 +157,106 @@ class ItemInfo : ItemInfo { \
 #define HEARING_PROTECTION_PELTOR ace_hearing_lowerVolume = 0.0;ace_hearing_protection = 0.5;advanced_peltors_protection = 1;
 
 #define INVENTORY_VEHICLE_DEFAULT_WEAPONS \
-	TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 1)
+    TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 1)
 
 #define INVENTORY_VEHICLE_DEFAULT_MAGAZINES \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 12) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 3) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 1) \
-	TRANSPORT_MAGAZINE(SmokeShellBlue, 2) \
-	TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 12) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 3) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 1) \
+    TRANSPORT_MAGAZINE(SmokeShellBlue, 2) \
+    TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
 
 #define INVENTORY_VEHICLE_DEFAULT_ITEMS \
-	TRANSPORT_ITEM(ACRE_PRC152, 1) \
-	TRANSPORT_ITEM(ToolKit, 1) \
-	TRANSPORT_ITEM(ACE_wirecutter, 1) \
-	TRANSPORT_ITEM(ACE_DefusalKit, 1) \
-	TRANSPORT_ITEM(ACE_bodyBag, 6) \
-	TRANSPORT_ITEM(ACE_CableTie, 6) \
-	TRANSPORT_ITEM(ACE_tourniquet, 0)	\
-	TRANSPORT_ITEM(ACE_fieldDressing, 0) \
-	TRANSPORT_ITEM(ACE_quikclot, 0) \
-	TRANSPORT_ITEM(ACE_elasticBandage, 0) \
-	TRANSPORT_ITEM(ACE_packingBandage, 0) \
-	TRANSPORT_ITEM(ACE_morphine, 0) \
-	TRANSPORT_ITEM(ACE_epinephrine, 0) \
-	TRANSPORT_ITEM(ACE_surgicalKit, 0)\
-	TRANSPORT_ITEM(ACE_bloodIV_500, 0)
+    TRANSPORT_ITEM(ACRE_PRC152, 1) \
+    TRANSPORT_ITEM(ToolKit, 1) \
+    TRANSPORT_ITEM(ACE_wirecutter, 1) \
+    TRANSPORT_ITEM(ACE_DefusalKit, 1) \
+    TRANSPORT_ITEM(ACE_bodyBag, 6) \
+    TRANSPORT_ITEM(ACE_CableTie, 6) \
+    TRANSPORT_ITEM(ACE_tourniquet, 0)    \
+    TRANSPORT_ITEM(ACE_fieldDressing, 0) \
+    TRANSPORT_ITEM(ACE_quikclot, 0) \
+    TRANSPORT_ITEM(ACE_elasticBandage, 0) \
+    TRANSPORT_ITEM(ACE_packingBandage, 0) \
+    TRANSPORT_ITEM(ACE_morphine, 0) \
+    TRANSPORT_ITEM(ACE_epinephrine, 0) \
+    TRANSPORT_ITEM(ACE_surgicalKit, 0)\
+    TRANSPORT_ITEM(ACE_bloodIV_500, 0)
 
 #define INVENTORY_VEHICLE_DEFAULT_BACKPACKS \
-	TRANSPORT_BACKPACK(SOCOMD_Item_Backpack_Rifleman, 0)\
-	TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)\
-	TRANSPORT_BACKPACK(ACE_TacticalLadder_Pack, 1)
+    TRANSPORT_BACKPACK(SOCOMD_Item_Backpack_Rifleman, 0)\
+    TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)\
+    TRANSPORT_BACKPACK(ACE_TacticalLadder_Pack, 1)
 
 // ======================================================
 // size dependant inventories, doesn't make sense a quad bike carries the same as a Bushmaster
 
 // small
 #define INVENTORY_VEHICLE_SMALL_WEAPONS \
-	TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 1) 
+    TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 1) 
 
 #define INVENTORY_VEHICLE_SMALL_MAGAZINES \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 4) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 2) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 1) \
-	TRANSPORT_MAGAZINE(SmokeShellBlue, 1) \
-	TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 4) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 2) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 1) \
+    TRANSPORT_MAGAZINE(SmokeShellBlue, 1) \
+    TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
 
 #define INVENTORY_VEHICLE_SMALL_ITEMS \
-	TRANSPORT_ITEM(ToolKit, 1) \
-	TRANSPORT_ITEM(ACRE_PRC152, 1) \
-	TRANSPORT_ITEM(ACE_bodyBag, 2) \
-	TRANSPORT_ITEM(ACE_CableTie, 6) 
+    TRANSPORT_ITEM(ToolKit, 1) \
+    TRANSPORT_ITEM(ACRE_PRC152, 1) \
+    TRANSPORT_ITEM(ACE_bodyBag, 2) \
+    TRANSPORT_ITEM(ACE_CableTie, 6) 
 
 #define INVENTORY_VEHICLE_SMALL_BACKPACKS \
-	TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 1)
+    TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 1)
 
 // Medium
 #define INVENTORY_VEHICLE_MEDIUM_WEAPONS \
-	TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 1) \
-	TRANSPORT_WEAPON(SOCOMD_LAW, 1) 
+    TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 1) \
+    TRANSPORT_WEAPON(SOCOMD_LAW, 1) 
 
 #define INVENTORY_VEHICLE_MEDIUM_MAGAZINES \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 8) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 4) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 3) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 2) \
-	TRANSPORT_MAGAZINE(SmokeShellBlue, 2) \
-	TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 8) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 4) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 3) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 2) \
+    TRANSPORT_MAGAZINE(SmokeShellBlue, 2) \
+    TRANSPORT_MAGAZINE(B_IR_Grenade, 2)
 
 #define INVENTORY_VEHICLE_MEDIUM_ITEMS \
-	TRANSPORT_ITEM(ToolKit, 1) \
-	TRANSPORT_ITEM(ACRE_PRC152, 1) \
-	TRANSPORT_ITEM(ACE_bodyBag, 2) \
-	TRANSPORT_ITEM(ACE_CableTie, 6) 
+    TRANSPORT_ITEM(ToolKit, 1) \
+    TRANSPORT_ITEM(ACRE_PRC152, 1) \
+    TRANSPORT_ITEM(ACE_bodyBag, 2) \
+    TRANSPORT_ITEM(ACE_CableTie, 6) 
 
 #define INVENTORY_VEHICLE_MEDIUM_BACKPACKS \
-	TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)
+    TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)
 
 // large
 #define INVENTORY_VEHICLE_LARGE_WEAPONS \
-	TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 2) \
-	TRANSPORT_WEAPON(SOCOMD_LAW, 2) 
+    TRANSPORT_WEAPON(SOCOMD_Item_Primary_Rifleman, 2) \
+    TRANSPORT_WEAPON(SOCOMD_LAW, 2) 
 
 #define INVENTORY_VEHICLE_LARGE_MAGAZINES \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 12) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 8) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 6) \
-	TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 4) \
-	TRANSPORT_MAGAZINE(SmokeShellBlue, 4) \
-	TRANSPORT_MAGAZINE(B_IR_Grenade, 4)
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_30Rnd, 12) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_20Rnd, 8) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 6) \
+    TRANSPORT_MAGAZINE(SOCOMD_Item_Magazine_762x51_100Rnd_Tracer, 4) \
+    TRANSPORT_MAGAZINE(SmokeShellBlue, 4) \
+    TRANSPORT_MAGAZINE(B_IR_Grenade, 4)
 
 #define INVENTORY_VEHICLE_LARGE_ITEMS \
-	TRANSPORT_ITEM(ToolKit, 1) \
-	TRANSPORT_ITEM(ACRE_PRC152, 1) \
-	TRANSPORT_ITEM(ACE_bodyBag, 2) \
-	TRANSPORT_ITEM(ACE_CableTie, 6) 
+    TRANSPORT_ITEM(ToolKit, 1) \
+    TRANSPORT_ITEM(ACRE_PRC152, 1) \
+    TRANSPORT_ITEM(ACE_bodyBag, 2) \
+    TRANSPORT_ITEM(ACE_CableTie, 6) 
 
 #define INVENTORY_VEHICLE_LARGE_BACKPACKS \
-	TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)\
-	TRANSPORT_BACKPACK(ACE_TacticalLadder_Pack, 1)
+    TRANSPORT_BACKPACK(SOCOMD_Medical_Grabbag, 2)\
+    TRANSPORT_BACKPACK(ACE_TacticalLadder_Pack, 1)
 
 // ======================================================
 //  vehicle specific loadouts
@@ -235,7 +264,7 @@ class ItemInfo : ItemInfo { \
 // 6x6 ATV
 
 #define INVENTORY_VEHICLE_6X6_ITEMS \
-	TRANSPORT_ITEM(ToolKit, 1) \
-	TRANSPORT_ITEM(ACRE_PRC117F, 1) \
-	TRANSPORT_ITEM(ACE_bodyBag, 2) \
-	TRANSPORT_ITEM(ACE_CableTie, 6) 
+    TRANSPORT_ITEM(ToolKit, 1) \
+    TRANSPORT_ITEM(ACRE_PRC117F, 1) \
+    TRANSPORT_ITEM(ACE_bodyBag, 2) \
+    TRANSPORT_ITEM(ACE_CableTie, 6) 

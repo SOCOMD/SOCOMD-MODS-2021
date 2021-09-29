@@ -1,7 +1,5 @@
 #include "script_component.hpp"
-_args = _this;
-_player = _args select 0;
-_weaponId = _args select 1;
+params ["_player","_weaponId"];
 
 _loadoutWeaponConfig = (missionConfigFile >> "CfgLoadoutWeapons" >> _weaponId);
 if(isNull _loadoutWeaponConfig) then {

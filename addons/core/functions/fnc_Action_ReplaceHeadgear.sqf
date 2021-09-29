@@ -6,4 +6,4 @@ _headgear = _this select 1;
 _unitLoadout = getUnitLoadout _player;
 _unitLoadout set [6, _headgear];
 
-[_player, _unitLoadout] call FUNC(SetUnitLoadout);
+[_player, _unitLoadout] call EFUNC(qstore,SetUnitLoadout);

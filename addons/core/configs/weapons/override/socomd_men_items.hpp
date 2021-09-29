@@ -34,7 +34,7 @@ class SOCOMD_Item_Secondary_Medic                   : ItemCore {scope = SCOPE_PR
 class SOCOMD_Item_Secondary_Sapper                  : ItemCore {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Secondary_MachineGunner           : ItemCore {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Secondary_Recon                   : ItemCore {scope = SCOPE_PROTECTED;};
-class SOCOMD_Item_Secondary_AT                     	: launch_MRAWS_green_rail_F {scope = SCOPE_PROTECTED;};
+class SOCOMD_Item_Secondary_AT                         : launch_MRAWS_green_rail_F {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Secondary_Pilot                   : ItemCore {scope = SCOPE_PROTECTED;};
 class SOCOMD_Item_Secondary_Crewman                 : ItemCore {scope = SCOPE_PROTECTED;};
 

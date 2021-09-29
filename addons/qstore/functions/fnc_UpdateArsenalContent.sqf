@@ -24,10 +24,10 @@ _helmets = getArray (configFile >> "CfgArsenalOptions" >> "helmets" >> "helmets"
 _configClasses = "(getNumber (_x >> 'scope') >= 2)" configClasses (configFile >> "CfgGlasses");
 _facewear = [];
 {
-	if !(configName _x in _blackList) then
-	{
-		_facewear pushBack (configName _x);
-	};
+    if !(configName _x in _blackList) then
+    {
+        _facewear pushBack (configName _x);
+    };
 } forEach _configClasses;
 
 // 101, muzzle devices
@@ -40,24 +40,24 @@ _configBipods = "getNumber (_x >> 'ItemInfo' >> 'type') in [302] and getNumber (
 _configOptics = "getNumber (_x >> 'ItemInfo' >> 'type') in [201] and getNumber (_x >> 'scope') == 2" configClasses (configFile >> "CfgWeapons");
 // filters optics, skips if recon class
 {
-	_scopeFOVBlacklisted =  [configName _x, []] call FUNC(CheckScopeFOV);
+    _scopeFOVBlacklisted =  [configName _x, []] call FUNC(CheckScopeFOV);
     if( _scopeFOVBlacklisted == 0  && !(configName _x in _blackList )) then {
-		_accessories pushBack (configName _x);
+        _accessories pushBack (configName _x);
     };
 } forEach _configOptics;
 // filters lasers and muzzle devices
 {
-	if !(configName _x in _blackList) then
-	{
-		_accessories pushBack (configName _x);
-	};
+    if !(configName _x in _blackList) then
+    {
+        _accessories pushBack (configName _x);
+    };
 } forEach _configAcc;
 // filters bipods
 {
-	if !(configName _x in _blackList) then
-	{
-		_accessories pushBack (configName _x);
-	};
+    if !(configName _x in _blackList) then
+    {
+        _accessories pushBack (configName _x);
+    };
 } forEach _configBipods;
 
 

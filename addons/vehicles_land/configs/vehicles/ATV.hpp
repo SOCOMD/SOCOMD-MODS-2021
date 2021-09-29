@@ -145,67 +145,67 @@ class NDS_6x6_ATV_base: Car_F
         turnDecreaseTime = 0.0;
         maxTurnHundred = 0.8;
     };
-	memoryPointTrackFLL = "TrackFLL";
-	memoryPointTrackFLR = "TrackFLR";
-	memoryPointTrackBLL = "TrackBLL";
-	memoryPointTrackBLR = "TrackBLR";
-	memoryPointTrackFRL = "TrackFRL";
-	memoryPointTrackFRR = "TrackFRR";
-	memoryPointTrackBRL = "TrackBRL";
-	memoryPointTrackBRR = "TrackBRR";
+    memoryPointTrackFLL = "TrackFLL";
+    memoryPointTrackFLR = "TrackFLR";
+    memoryPointTrackBLL = "TrackBLL";
+    memoryPointTrackBLR = "TrackBLR";
+    memoryPointTrackFRL = "TrackFRL";
+    memoryPointTrackFRR = "TrackFRR";
+    memoryPointTrackBRL = "TrackBRL";
+    memoryPointTrackBRR = "TrackBRR";
     ejectDeadCargo = 1;
-	ejectDeadDriver = 1;
-	crewCrashProtection = 0;
-	crewExplosionProtection = 0;
-	damageEffect = "";
-	damageTexDelay = 0.5;
-	fuelExplosionPower = 0;
-	maxFordingDepth = -0.45;
-	maximumLoad = 600;
+    ejectDeadDriver = 1;
+    crewCrashProtection = 0;
+    crewExplosionProtection = 0;
+    damageEffect = "";
+    damageTexDelay = 0.5;
+    fuelExplosionPower = 0;
+    maxFordingDepth = -0.45;
+    maximumLoad = 600;
 };
 
 class NDS_6x6_ATV_MIL2_LR: NDS_6x6_ATV_base {};
 
 class SOCOMD_LR_ATV : NDS_6x6_ATV_MIL2_LR {
     scope = SCOPE_PUBLIC;
-	scopeCurator = SCOPE_PUBLIC;
-	editorCategory = SOCOMD_EdCat_Core;
-	editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
-	side = WEST;
-	author = AUTHOR_STR;
-	faction = FACTION_STR;
-	displayname = "6x6 ATV (1/0)";
-	vehicleclass = "Car";
-	forceInGarage = 1;
+    scopeCurator = SCOPE_PUBLIC;
+    editorCategory = SOCOMD_EdCat_Core;
+    editorSubcategory = SOCOMD_EdSubcat_Vehicle_Land;
+    side = WEST;
+    author = AUTHOR_STR;
+    faction = FACTION_STR;
+    displayname = "6x6 ATV (1/0)";
+    vehicleclass = "Car";
+    forceInGarage = 1;
 
-	fuelCapacity = 4; // 4 == 24m at max (4 == default)
-	ace_refuel_fuelCapacity = 25;
-	ace_refuel_fuelCargo = 40;
-	crew = "SOCOMD_Crewman";
-	typicalCargo[] = {"SOCOMD_Crewman"};
+    fuelCapacity = 4; // 4 == 24m at max (4 == default)
+    ace_refuel_fuelCapacity = 25;
+    ace_refuel_fuelCargo = 40;
+    crew = "SOCOMD_Crewman";
+    typicalCargo[] = {"SOCOMD_Crewman"};
     class TransportWeapons {
-		INVENTORY_VEHICLE_MEDIUM_WEAPONS
-	};
+        INVENTORY_VEHICLE_MEDIUM_WEAPONS
+    };
 
-	class TransportMagazines {
-		INVENTORY_VEHICLE_SMALL_MAGAZINES
-	};
+    class TransportMagazines {
+        INVENTORY_VEHICLE_SMALL_MAGAZINES
+    };
 
-	class TransportItems {
-		INVENTORY_VEHICLE_6X6_ITEMS
-	};
+    class TransportItems {
+        INVENTORY_VEHICLE_6X6_ITEMS
+    };
 
-	class TransportBackpacks {
-		INVENTORY_VEHICLE_SMALL_BACKPACKS
-	};
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_SMALL_BACKPACKS
+    };
     class AcreRacks {
-		class Rack_1 {
-			allowedPositions[] = {"driver",{"cargo", "all"}, {"ffv", "all"},{"turnedout", "all"}};
-			componentName = "ACRE_VRC103";
-			displayName = "Dash";
-			mountedRadio = "ACRE_PRC117F";
-			shortName = "Dash";
-		};
-	};
+        class Rack_1 {
+            allowedPositions[] = {"driver",{"cargo", "all"}, {"ffv", "all"},{"turnedout", "all"}};
+            componentName = "ACRE_VRC103";
+            displayName = "Dash";
+            mountedRadio = "ACRE_PRC117F";
+            shortName = "Dash";
+        };
+    };
 };
 

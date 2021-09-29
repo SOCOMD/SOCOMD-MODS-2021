@@ -1,4 +1,4 @@
-#define COMPONENT equipment
+#define COMPONENT zeus
 #include "\z\socomd\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

@@ -1,6 +1,5 @@
 #include "script_component.hpp"
-_args = _this;
-_player = _this select 0;
+params ["_player"];
 _loadoutId = _player getVariable ["SOCOMD_LOADOUTID", ""];
 
 _allowed = false;
