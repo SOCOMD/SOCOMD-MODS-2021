@@ -96,7 +96,7 @@ else {
     _secondaryLoadout set [0, _secondary];
     
     if(isNumber( _loadoutWeaponConfig >> "startLoaded") && (getNumber( _loadoutWeaponConfig >> "startLoaded") == 1)) then {
-        _secondaryLoadout set [4, [((_loadoutMagazines) select 0 ) select 0),1000000]];
+        _secondaryLoadout set [4, [((_loadoutMagazines) select 0 ) select 0,1000000]];
     } else {
         _secondaryLoadout set [4, []];
     };
@@ -107,12 +107,11 @@ else {
 _loadoutMagazines = getArray (_loadoutWeaponConfig >> "magazines");
 _handgunLoadout = _unitLoadout select 2;
 if(count _handgunLoadout <= 0) then {
-    _handgunLoadout = [_handgun, "", "", "", [((_loadoutMagazines) select 0 ) select 0),1000000], [], ""];
-}
-else {
+    _handgunLoadout = [_handgun, "", "", "", [((_loadoutMagazines) select 0 ) select 0,1000000], [], ""];
+} else {
     _handgunLoadout set [0, _handgun];
-    _handgunLoadout set [4, [_loadoutMagazines#0#0,1000000]];
-    _handgunLoadout set [5, []];
+    _handgunLoadout set [4, [((_loadoutMagazines) select 0 ) select 0,1000000]];
+    _handgunLoadout set [5, [ ] ];
 };
 
 _unitLoadout set [0, _primaryLoadout];

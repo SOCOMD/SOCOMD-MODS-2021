@@ -20,7 +20,7 @@ _primaryMagazineWells = getArray(configFile >> "CfgWeapons" >> _weaponId >> "mag
 //Get magazines from magazine wells
 {
     _magazineWellConfig = (configFile >> "CfgMagazineWells" >> _x);
-    for "_i" from 0 to (count _magazineWellConfig) - 1 do {
+    for ("_i" from 0 to (count _magazineWellConfig) - 1) do {
         _handgunMagazines = _handgunMagazines + getArray(_magazineWellConfig select _i);
     };
 }foreach(_primaryMagazineWells);
@@ -41,11 +41,11 @@ _unitLoadout = getUnitLoadout _player;
 
 _primaryLoadout = _unitLoadout select 2;
 if(count _primaryLoadout <= 0) then {
-    _primaryLoadout = [_weaponId, "", "", "", [_loadoutMagazines#0#0,1000000], [], ""];
+    _primaryLoadout = [_weaponId, "", "", "", [((_loadoutMagazines) select 0 ) select 0,1000000], [], ""];
 }
 else {
     _primaryLoadout set [0, _weaponId];
-    _primaryLoadout set [4, [_loadoutMagazines#0#0,1000000]];
+    _primaryLoadout set [4, [((_loadoutMagazines) select 0 ) select 0,1000000]];
     _primaryLoadout set [5, []];
 };
 

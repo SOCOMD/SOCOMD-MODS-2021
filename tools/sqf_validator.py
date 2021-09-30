@@ -131,13 +131,13 @@ def check_sqf_syntax(filepath):
             indexOfCharacter += 1
 
         if brackets_list.count('[') != brackets_list.count(']'):
-            print("ERROR: A possible missing square bracket [ or ] in file {0} [ = {1} ] = {2}".format(filepath,brackets_list.count('['),brackets_list.count(']')))
+            print("ERROR: A possible missing square bracket [ or ] in file {0} [ = {1}, ] = {2}".format(filepath,brackets_list.count('['),brackets_list.count(']')))
             bad_count_file += 1
         if brackets_list.count('(') != brackets_list.count(')'):
-            print("ERROR: A possible missing round bracket ( or ) in file {0} ( = {1} ) = {2}".format(filepath,brackets_list.count('('),brackets_list.count(')')))
+            print("ERROR: A possible missing round bracket ( or ) in file {0} ( = {1}, ) = {2}".format(filepath,brackets_list.count('('),brackets_list.count(')')))
             bad_count_file += 1
         if brackets_list.count('{') != brackets_list.count('}'):
-            print("ERROR: A possible missing curly brace {{ or }} in file {0} {{ = {1} }} = {2}".format(filepath,brackets_list.count('{'),brackets_list.count('}')))
+            print("ERROR: A possible missing curly brace {{ or }} in file {0} {{ = {1}, }} = {2}".format(filepath,brackets_list.count('{'),brackets_list.count('}')))
             bad_count_file += 1
     return bad_count_file
 
