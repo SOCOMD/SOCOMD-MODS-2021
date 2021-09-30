@@ -1,1 +1,2 @@
-// FUNCTION PREPS
+PREP(BushMasterHitEH);
+PREP(JackelHitEH);

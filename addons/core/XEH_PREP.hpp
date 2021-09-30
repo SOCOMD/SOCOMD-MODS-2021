@@ -27,7 +27,6 @@ PREP(Action_ToggleAndroid);
 PREP(Action_toggleGhillie);
 PREP(Action_toggleStashDivingGear);
 PREP(ASORVS_GetClassnames);
-PREP(BushMasterInit);
 PREP(CommonInitLocal);
 PREP(CommonInitServer);
 PREP(getMass);

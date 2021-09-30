@@ -60,7 +60,10 @@ class CfgVehicles {
         };
 
         class Turrets : Turrets {
+            class MainTurret;
             class CopilotTurret;
+            class LeftDoorGun;
+            class RightDoorGun;
         };
     };
     ////////////////////////////////////////////////////////////////////////////////
@@ -285,8 +288,8 @@ class CfgVehicles {
             };
         };
     };
-    #include "vehicles/firefly.hpp"
-    #include "vehicles/hurricane.hpp"
-    #include "vehicles/nomad.hpp"
-    #include "vehicles/warrior.hpp"
+    #include "vehicles/socomd/firefly.hpp"
+    #include "vehicles/socomd/hurricane.hpp"
+    #include "vehicles/socomd/nomad.hpp"
+    #include "vehicles/socomd/warrior.hpp"
 };

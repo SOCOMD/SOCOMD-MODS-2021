@@ -268,3 +268,8 @@ class ItemInfo : ItemInfo { \
     TRANSPORT_ITEM(ACRE_PRC117F, 1) \
     TRANSPORT_ITEM(ACE_bodyBag, 2) \
     TRANSPORT_ITEM(ACE_CableTie, 6) 
+
+
+#define SHIP_FAST_TURRETS \
+maxHorizontalRotSpeed = 8; \
+maxVerticalRotSpeed = 8;
