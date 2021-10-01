@@ -6,7 +6,7 @@ _player = _args select 0;
 
 if(!(isPlayer _player)) exitWith {_fov};
 
-_maxOptic = [player] call SOCOMD_fnc_GetLoadoutMaxOptic;
+_maxOptic = [player] call FUNC(GetLoadoutMaxOptic);
 if(_maxOptic == "") exitWith {_fov};
 
 switch(_maxOptic) do {
