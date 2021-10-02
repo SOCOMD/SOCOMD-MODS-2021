@@ -127,9 +127,9 @@ class SOCOMD_LOWVIS_Rifleman {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 4)
+            LOADOUT_ITEM(20Rnd_762x51_Mag, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT,1)
         };
     };
 };
@@ -199,7 +199,7 @@ class SOCOMD_LOWVIS_Marksman {
         type = "lbt_tl_mc";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 8)
+            LOADOUT_ITEM(20Rnd_762x51_Mag, 8)
         };
     };
     class Backpack {
@@ -282,7 +282,7 @@ class SOCOMD_LOWVIS_MachineGunner {
         type = "lbt_tl_mc";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT, 2)
         };
     };
 

@@ -1,23 +1,23 @@
 
 // Melb Heli
 class MELB_base : Helicopter_Base_H {
-	class Hitpoints;
-	class Components;
+    class Hitpoints;
+    class Components;
     class Turrets;
 };
 
 class MELB_MH6M : MELB_base {
-	class HitPoints : HitPoints {
-		class HitHull;
-		class HitEngine;
-		class HitFuel;
-		class HitAvionics;
-		class HitGlass1;
-		class HitHRotor;
-		class HitMissiles;
-		class HitTransmission;
-		class HitVRotor;
-	};
+    class HitPoints : HitPoints {
+        class HitHull;
+        class HitEngine;
+        class HitFuel;
+        class HitAvionics;
+        class HitGlass1;
+        class HitHRotor;
+        class HitMissiles;
+        class HitTransmission;
+        class HitVRotor;
+    };
  };
 class MELB_AH6M : MELB_base {
     //weapons[] = {"CUP_weapon_mastersafe","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
@@ -26,17 +26,17 @@ class MELB_AH6M : MELB_base {
         class CopilotTurret;
     };
     
-	class HitPoints : HitPoints {
-		class HitHull;
-		class HitEngine;
-		class HitFuel;
-		class HitAvionics;
-		class HitGlass1;
-		class HitHRotor;
-		class HitMissiles;
-		class HitTransmission;
-		class HitVRotor;
-	};
+    class HitPoints : HitPoints {
+        class HitHull;
+        class HitEngine;
+        class HitFuel;
+        class HitAvionics;
+        class HitGlass1;
+        class HitHRotor;
+        class HitMissiles;
+        class HitTransmission;
+        class HitVRotor;
+    };
     class Components : Components {
         class TransportPylonsComponent {
             class pylons {
@@ -77,6 +77,19 @@ class SOCOMD_FIREFLY_A : MELB_MH6M {
     displayname = "Firefly (2/6)";
     mass=1220; // higher makes controls more sensitive default: 1220
     hiddenSelections[] = {"camo1","d_sn"};
+    typicalCargo[] = {SOCOMD_PILOT};
+    class TransportWeapons {
+        INVENTORY_VEHICLE_SMALL_WEAPONS
+    };
+    class TransportMagazines {
+        INVENTORY_VEHICLE_SMALL_MAGAZINES
+    };
+    class TransportItems {
+        INVENTORY_VEHICLE_SMALL_ITEMS
+    };
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_SMALL_BACKPACKS
+    };
     hiddenSelectionsTextures[] = {
         "\z\socomd\addons\data\ah6\ah6_hull_co.paa",
         "melb\data\decals\sn\blank_ca.paa"
@@ -159,6 +172,19 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
     author = AUTHOR_STR;
     faction = FACTION_STR;
     displayname = "Dragonfly (2/1)";
+    typicalCargo[] = {SOCOMD_PILOT};
+    class TransportWeapons {
+        INVENTORY_VEHICLE_SMALL_WEAPONS
+    };
+    class TransportMagazines {
+        INVENTORY_VEHICLE_SMALL_MAGAZINES
+    };
+    class TransportItems {
+        INVENTORY_VEHICLE_SMALL_ITEMS
+    };
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_SMALL_BACKPACKS
+    };
     mass=1220; // higher makes controls more sensitive default: 1220
     hiddenSelections[] = {"camo1","d_sn"};
     hiddenSelectionsTextures[] = {
@@ -169,12 +195,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
     armorStructural = 4;
     magazines[] = {"CUP_2Rnd_pylonblank_M","CUP_8Rnd_pylonblank_M","CUP_4000Rnd_TE1_Red_Tracer_762x51_M134_M","CUP_1Rnd_pylonblank_M","168Rnd_CMFlare_Chaff_Magazine"};
     weapons[] = {"CUP_weapon_mastersafe","CUP_Vlmg_TwinM134_veh","CMFlareLauncher"};
-    class Turrets : Turrets {
-        class CopilotTurret : CopilotTurret {
-            weapons[] = {"CUP_Laserdesignator_mounted"};
-            magazines[] = {"Laserbatteries"};
-        };
-    };
+  
     
     class AcreIntercoms { 
         class Intercom_1 { 
@@ -197,6 +218,13 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
             shortName = "Dash"; 
         }; 
     }; 
+    class Turrets : Turrets {
+        class CopilotTurret : CopilotTurret {
+            weapons[] = {"CUP_Laserdesignator_mounted"};
+            magazines[] = {"Laserbatteries"};
+        };
+    };
+    
     class Components : Components {
         class TransportPylonsComponent {
             UIPicture = "melb\data\ui\melb_eden_ca.paa";
@@ -308,7 +336,7 @@ class SOCOMD_DRAGONFLY_A : MELB_AH6M {
                 delete L_Rockets_3x;
                 delete L_Rockets_4x;
                 delete L_Rockets_12x;
-*/
+                */
 
             };
             class presets {

@@ -3,7 +3,12 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {};
+        units[] = {
+            // SEA
+            "SOCOMD_SHIP_A",
+            "SOCOMD_SHIP_B",
+            "SOCOMD_SHIP_C",
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"socomd_core"};

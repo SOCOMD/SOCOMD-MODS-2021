@@ -2,6 +2,7 @@
 class CfgAmmo {
     class BulletBase;
     class MissileBase;
+    class M_Scalpel_AT;
     class SmokeShell;
 
     class B_45ACP_Ball: BulletBase {
@@ -21,9 +22,6 @@ class CfgAmmo {
         deflectionSlowDown = 0;
     };
     
-    class M_Scalpel_AT : MissileBase {
-        //Empty
-    };
 
     //Parents: "M_Scalpel_AT","MissileBase","MissileCore","Default"
     class ACE_Hellfire_AGM114K : M_Scalpel_AT {

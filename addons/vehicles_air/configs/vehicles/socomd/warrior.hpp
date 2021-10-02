@@ -205,7 +205,7 @@ class SOCOMD_WARRIOR_B:vtx_MH60M{
         INVENTORY_VEHICLE_MEDIUM_ITEMS 
     }; 
     class TransportBackpacks { 
-        INVENTORY_VEHICLE_MEDIUM_BACKPACKS 
+        INVENTORY_VEHICLE_HELO_BAGS 
     }; 
     class AcreIntercoms { 
         class Intercom_1 { 

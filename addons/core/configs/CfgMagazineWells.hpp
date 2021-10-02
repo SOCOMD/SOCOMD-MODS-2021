@@ -7,7 +7,8 @@ class CfgMagazineWells {
             "SOCOMD_Item_Magazine_556x45_30Rnd_Tracer",
             "SOCOMD_Item_Magazine_556x45_30Rnd",
             "SOCOMD_Item_Magazine_556x45_30Rnd_Tracer",
-            "ACWP_30rnd_556x45_EPR_PMAG"
+            "ACWP_30rnd_556x45_EPR_PMAG",
+            "ACWP_30rnd_556x45_M_PMAG"
         };
     };
 

@@ -168,8 +168,8 @@
     "CUP_lmg_Mk48_nohg_des",\
     "CUP_lmg_Mk48_nohg_tan",\
     "CUP_lmg_Mk48_nohg_wdl",\
-    "SOCOMD_Item_Magazine_556x45_200Rnd_Tracer",\
-    "SOCOMD_Item_Magazine_762x51_100Rnd_Tracer",\
+    QUOTE(ITEM_MAGAZINE_556_BELT),\
+    QUOTE(ITEM_MAGAZINE_762_BELT),\
     "SOCOMD_mag58"
 
 #define MARKSMAN \
@@ -182,7 +182,7 @@
     "ACWP_sr25_ec_camo",\
     "ACWP_sr25_VFG",\
     "ACWP_sr25_VFG_camo",\
-    "SOCOMD_Item_Magazine_762x51_20Rnd"
+    QUOTE(20Rnd_762x51_Mag)
 
 #define SNIPER \
     "Recon_Barret",\

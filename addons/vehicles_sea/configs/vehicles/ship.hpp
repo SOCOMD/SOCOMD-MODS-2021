@@ -149,12 +149,12 @@ SHIP_BASE(A,SCOPE_PUBLIC,SOCOMD_BOAT)
 SHIP_BASE(C,SCOPE_PUBLIC,SOCOMD_BOAT_SUB)
 class Ship_F;
 class CUP_RHIB_Base : Ship_F {
-	class Turrets;
+    class Turrets;
 };
 class CUP_B_RHIB_USMC : CUP_RHIB_Base {
-	class Turrets : Turrets {
-		class MainTurret;
-	};
+    class Turrets : Turrets {
+        class MainTurret;
+    };
 };
 class SOCOMD_SHIP_B : CUP_B_RHIB_USMC {
     scope = SCOPE_PUBLIC;

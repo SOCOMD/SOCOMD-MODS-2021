@@ -59,10 +59,10 @@ class SOCOMD_Homestead : SOCOMD_Unarmed {
     displayname = "Homestead";
     vehicleclass = "Man";
 
-    respawnLinkedItems[]         = {SOLDIER_HOMESTEAD_LINKEDITEMS};
-    linkedItems[]                 = {SOLDIER_HOMESTEAD_LINKEDITEMS};
+    respawnLinkedItems[]        = {SOLDIER_HOMESTEAD_LINKEDITEMS};
+    linkedItems[]               = {SOLDIER_HOMESTEAD_LINKEDITEMS};
     Items[]                     = {SOLDER_HOMESTEAD_ITEMS};
-    RespawnItems[]                 = {SOLDER_HOMESTEAD_ITEMS};
+    RespawnItems[]              = {SOLDER_HOMESTEAD_ITEMS};
     backpack                    = "SOCOMD_BackpackPRC117F";
 };
 
@@ -70,12 +70,12 @@ class SOCOMD_Homestead : SOCOMD_Unarmed {
     ITEM01(ITEM_PRIMARY_M4)
 
 #define SOLDER_RIFLEMAN_MAGAZINES \
-    ITEM07(ITEM_PRIMARY_MAGAZINE_RIFLEMAN)
+    ITEM07(ITEM_MAGAZINE_556)
 
 #define SOLDIER_RIFLEMAN_LINKEDITEMS \
     SOLDIER_LOADOUT_LINKEDITEMS, \
     ITEM01(ITEM_VEST_RIFLEMAN), \
-    ITEM01(ITEM_HEADGEAR_RIFLEMAN)
+    ITEM01(ITEM_DEFAULT_HEADGEAR)
 
 
 class SOCOMD_Rifleman : SOCOMD_Unarmed {
@@ -99,10 +99,10 @@ class SOCOMD_Rifleman : SOCOMD_Unarmed {
 };
 
 #define SOLDER_PILOT_WEAPONS \
-    ITEM01(ITEM_PRIMARY_PILOT)
+    ITEM01(ITEM_PRIMARY_SMG)
 
 #define SOLDER_PILOT_MAGAZINES \
-    ITEM07(ITEM_PRIMARY_MAGAZINE_PILOT)
+    ITEM07(ITEM_MAGAZINE_9MM)
 
 #define SOLDIER_PILOT_LINKEDITEMS \
     SOLDIER_LOADOUT_LINKEDITEMS, \
@@ -133,7 +133,7 @@ class SOCOMD_Pilot : SOCOMD_Unarmed {
     ITEM01(ITEM_PRIMARY_CREWMAN)
 
 #define SOLDER_CREWMAN_MAGAZINES \
-    ITEM07(ITEM_PRIMARY_MAGAZINE_CREWMAN)
+    ITEM07(ITEM_MAGAZINE_556)
 
 #define SOLDIER_CREWMAN_LINKEDITEMS \
     SOLDIER_LOADOUT_LINKEDITEMS, \

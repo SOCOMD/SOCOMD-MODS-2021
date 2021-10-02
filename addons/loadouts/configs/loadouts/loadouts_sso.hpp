@@ -128,9 +128,9 @@ class SOCOMD_SSO_Rifleman {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 4)
+            LOADOUT_ITEM(20Rnd_762x51_Mag, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT,1)
         };
     };
 };
@@ -200,7 +200,7 @@ class SOCOMD_SSO_Marksman {
         type = "AGE_TV110_AK_Holster_MultiCam";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 8)
+            LOADOUT_ITEM(20Rnd_762x51_Mag, 8)
         };
     };
     class Backpack {
@@ -283,7 +283,7 @@ class SOCOMD_SSO_MachineGunner {
         type = "AGE_TV110_AK_Holster_MultiCam";
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT, 2)
         };
     };
 

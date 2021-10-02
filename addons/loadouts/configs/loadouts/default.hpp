@@ -144,7 +144,7 @@ class SOCOMD_Commander {
     primary            = ITEM_PRIMARY_GL;
     secondary            = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
     gps                = "";
@@ -163,8 +163,8 @@ class SOCOMD_Commander {
         class Inventory {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ACRE_PRC152, 2)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
         };
     };
 
@@ -189,7 +189,7 @@ class SOCOMD_TACP {
     primary            = ITEM_PRIMARY_GL;
     secondary            = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "Laserdesignator";
     gps                = "";
@@ -209,8 +209,8 @@ class SOCOMD_TACP {
         class Inventory {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(ACRE_PRC152, 2)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
         };
     };
 
@@ -235,7 +235,7 @@ class SOCOMD_Leader {
     primary            = ITEM_PRIMARY_GL;
     secondary            = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
     gps                = "";
@@ -254,8 +254,8 @@ class SOCOMD_Leader {
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
             LOADOUT_ITEM(itc_land_tablet_rover,1)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
         };
     };
     class Backpack {
@@ -284,7 +284,7 @@ class SOCOMD_Rifleman {
     primary            = ITEM_PRIMARY_M4;
     secondary            = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
     gps                = "";
@@ -302,8 +302,8 @@ class SOCOMD_Rifleman {
         type = ITEM_VEST_RIFLEMAN;
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
         };
     };
     class Backpack {
@@ -311,9 +311,9 @@ class SOCOMD_Rifleman {
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
             LOADOUT_ITEM(ACE_EntrenchingTool, 1)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 2)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 4)
+            LOADOUT_ITEM(20Rnd_762x51_Mag, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT,1)
         };
     };
 };
@@ -324,7 +324,7 @@ class SOCOMD_Breacher {
     primary            = ITEM_PRIMARY_M4;
     secondary            = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
     gps                = "";
@@ -342,8 +342,8 @@ class SOCOMD_Breacher {
         type = ITEM_VEST_BREACHER;
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
         };
     };
     class Backpack {
@@ -363,9 +363,9 @@ class SOCOMD_Breacher {
 // Marksman
 class SOCOMD_Marksman {
     primary            = ITEM_PRIMARY_MARKSMAN;
-    secondary        = ITEM_SECONDARY_MARKSMAN;
+    secondary        = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
     gps                = "";
@@ -385,7 +385,7 @@ class SOCOMD_Marksman {
         type = ITEM_VEST_MARKSMAN;
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_762x51_20Rnd, 8)
+            LOADOUT_ITEM(20Rnd_762x51_Mag, 8)
         };
     };
     class Backpack {
@@ -401,9 +401,9 @@ class SOCOMD_Marksman {
 
 class SOCOMD_Sapper {
     primary            = ITEM_PRIMARY_M4;
-    secondary        = ITEM_SECONDARY_SAPPER;
+    secondary        = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
     gps                = "";
@@ -421,8 +421,8 @@ class SOCOMD_Sapper {
         type = ITEM_VEST_SAPPER;
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
         };
     };
 
@@ -449,9 +449,9 @@ class SOCOMD_Sapper {
 
 class SOCOMD_MachineGunner {
     primary            = ITEM_PRIMARY_MACHINEGUN;
-    secondary        = ITEM_SECONDARY_MACHINEGUNNER;
+    secondary        = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
     gps                = "";
@@ -469,7 +469,7 @@ class SOCOMD_MachineGunner {
         type = ITEM_VEST_MACHINEGUNNER;
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT, 2)
         };
     };
 
@@ -477,7 +477,7 @@ class SOCOMD_MachineGunner {
         type = ITEM_BACKPACK_MACHINEGUNNER;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_200Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_BELT, 2)
         };
     };
 };
@@ -487,9 +487,9 @@ class SOCOMD_MachineGunner {
 
 class SOCOMD_Medic {
     primary            = ITEM_PRIMARY_M4;
-    secondary        = ITEM_SECONDARY_MEDIC;
+    secondary        = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
     gps                = "";
@@ -506,8 +506,8 @@ class SOCOMD_Medic {
         type = ITEM_VEST_MEDIC;
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
         };
     };
 
@@ -552,9 +552,9 @@ class SOCOMD_Medic {
 
 class SOCOMD_AO{
     primary            = ITEM_PRIMARY_M4;
-    secondary        = ITEM_SECONDARY_MEDIC;
+    secondary        = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
     gps                = "";
@@ -571,7 +571,7 @@ class SOCOMD_AO{
         type = ITEM_VEST_MEDIC;
         class Inventory    {
             LOADOUT_VEST_AO_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 4)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 4)
         };
     };
 
@@ -618,14 +618,14 @@ class SOCOMD_AO{
 
 class SOCOMD_AT {
     primary            = ITEM_PRIMARY_M4;
-    secondary          = ITEM_SECONDARY_MAT;
+    secondary          = ITEM_DEFAULT_LAUNCHER;
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine    = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine    = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear           = ITEM_DEFAULT_HEADGEAR;
     binocular          = LEADER_BINOCS;
     gps                = "";
     maxOptic        = STANDARD_MAGNIFICATION_LIMIT;
-    optics[]         = {""};
+    optics[]         = {"tf47_optic_m3maaws"};
 
     class Uniform {
         type = ITEM_DEFAULT_UNIFORM;
@@ -639,8 +639,8 @@ class SOCOMD_AT {
         type = ITEM_VEST_AT;
         class Inventory    {
             LOADOUT_VEST_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
         };
     };
 
@@ -659,9 +659,9 @@ class SOCOMD_AT {
 
 class SOCOMD_Recon {
     primary            = ITEM_PRIMARY_RECON;
-    secondary        = ITEM_SECONDARY_RECON;
+    secondary        = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear        = ITEM_DEFAULT_HEADGEAR;
     binocular        = LEADER_BINOCS;
     gps                = "";
@@ -706,7 +706,7 @@ class SOCOMD_Logistician {
     primary         = ITEM_PRIMARY_M4;
     secondary         = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear         = ITEM_DEFAULT_HEADGEAR;
     binocular        = "";
     gps             = "ItemcTab";
@@ -724,8 +724,8 @@ class SOCOMD_Logistician {
         type = ITEM_VEST_RIFLEMAN;
         class Inventory    {
             LOADOUT_BACKPACK_ESSENTIALS
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd, 6)
-            LOADOUT_ITEM(SOCOMD_Item_Magazine_556x45_30Rnd_Tracer, 2)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556, 6)
+            LOADOUT_ITEM(ITEM_MAGAZINE_556_TRACER, 2)
             LOADOUT_ITEM(SmokeShell, 3)
             LOADOUT_ITEM(ACRE_PRC152, 2)
             LOADOUT_ITEM(ACRE_PRC343, 1)
@@ -748,7 +748,7 @@ class SOCOMD_Pilot {
     primary         = ITEM_PRIMARY_SMG;
     secondary         = "";
     handgun            = ITEM_DEFAULT_HANDGUN;
-    handgunMagazine = ITEM_DEFAULT_HANDGUN_MAGAZINE;
+    handgunMagazine = QUOTE(ITEM_DEFAULT_HANDGUN_MAGAZINE);
     headgear         = ITEM_PILOT_HEADGEAR;
     binocular         = "";
     gps             = "ItemcTab";

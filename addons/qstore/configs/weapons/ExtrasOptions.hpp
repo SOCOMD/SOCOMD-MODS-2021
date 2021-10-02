@@ -22,21 +22,21 @@ class extras_none : ExtrasBase{
 class extras_spare_squad_ammo: extras_none{
     displayName = "Squad Ammo";
     bag[] = {
-        {SOCOMD_Item_Magazine_556x45_30Rnd, 4},
+        {ITEM_MAGAZINE_556, 4},
         {SOCOMD_Item_Magazine_762x51_20Rnd, 2},
-        {SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,1}
+        {ITEM_MAGAZINE_556_BELT,1}
     };
 };
 class extras_mg_support: extras_none{
     displayName = "Minimi Ammo";
     bag[] = {
-        {SOCOMD_Item_Magazine_556x45_200Rnd_Tracer,3}
+        {ITEM_MAGAZINE_556_BELT,3}
     };
 };
 class extras_medium_mg_support: extras_none{
     displayName = "Maximi Ammo";
     bag[] = {
-        {SOCOMD_Item_Magazine_762x51_100Rnd_Tracer,3}
+        {ITEM_MAGAZINE_762_BELT,3}
     };
 };
 class extras_heavy_mg_support: extras_none{

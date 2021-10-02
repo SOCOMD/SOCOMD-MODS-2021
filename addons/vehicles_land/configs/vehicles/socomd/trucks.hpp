@@ -13,7 +13,23 @@ class SOCOMD_TRUCK_TRANSPORT_A : CUP_B_MTVR_USA {
     fuelCapacity = 24;
     ace_refuel_fuelCapacity = 120;
     cost = 20000;
-    threat[] = {0.8,0.8,0.5};    
+    threat[] = {0.8,0.8,0.5};   
+
+    class TransportWeapons {
+        INVENTORY_VEHICLE_LARGE_WEAPONS
+    };
+
+    class TransportMagazines {
+        INVENTORY_VEHICLE_LARGE_MAGAZINES
+    };
+
+    class TransportItems {
+        INVENTORY_VEHICLE_LARGE_ITEMS
+    };
+
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_LARGE_BACKPACKS
+    }; 
     hiddenSelections[] = {
         "Camo1",
         "Camo2",
@@ -45,6 +61,22 @@ class SOCOMD_TRUCK_AMMO_A : CUP_B_MTVR_Ammo_USA {
     ace_refuel_fuelCapacity = 120;
     cost = 20000;
     threat[] = {0.8,0.8,0.5};    
+
+    class TransportWeapons {
+        INVENTORY_VEHICLE_LARGE_WEAPONS
+    };
+
+    class TransportMagazines {
+        INVENTORY_VEHICLE_LARGE_MAGAZINES
+    };
+
+    class TransportItems {
+        INVENTORY_VEHICLE_LARGE_ITEMS
+    };
+
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_LARGE_BACKPACKS
+    };
     hiddenSelections[] = {
         "Camo1",
         "Camo2",
@@ -77,6 +109,22 @@ class SOCOMD_TRUCK_FUEL_A : CUP_B_MTVR_Refuel_USA {
     cost = 20000;
     threat[] = {0.8,0.8,0.5};
 
+
+    class TransportWeapons {
+        INVENTORY_VEHICLE_LARGE_WEAPONS
+    };
+
+    class TransportMagazines {
+        INVENTORY_VEHICLE_LARGE_MAGAZINES
+    };
+
+    class TransportItems {
+        INVENTORY_VEHICLE_LARGE_ITEMS
+    };
+
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_LARGE_BACKPACKS
+    };
     hiddenSelections[] = {
         "Camo1",
         "Camo2",
@@ -109,6 +157,22 @@ class SOCOMD_TRUCK_REPAIR_A : CUP_B_MTVR_Repair_USA {
     cost = 20000;
     threat[] = {0.8,0.8,0.5};
 
+
+    class TransportWeapons {
+        INVENTORY_VEHICLE_LARGE_WEAPONS
+    };
+
+    class TransportMagazines {
+        INVENTORY_VEHICLE_LARGE_MAGAZINES
+    };
+
+    class TransportItems {
+        INVENTORY_VEHICLE_LARGE_ITEMS
+    };
+
+    class TransportBackpacks {
+        INVENTORY_VEHICLE_LARGE_BACKPACKS
+    };
     hiddenSelections[] = {
         "Camo1",
         "Camo2",

@@ -4,16 +4,16 @@
 
 
 class CUP_CH47F_base : Helicopter_Base_H {
-	
+    
 };
 
 class CUP_B_CH47F_GB : CUP_CH47F_base {
-	class Turrets : Turrets {
-		class MainTurret;
-		class RightDoorGun;
-		class BackDoorGun;
-		class CopilotTurret;
-	};
+    class Turrets : Turrets {
+        class MainTurret;
+        class RightDoorGun;
+        class BackDoorGun;
+        class CopilotTurret;
+    };
 };
 
 class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
@@ -43,7 +43,7 @@ class SOCOMD_NOMAD_A : CUP_B_CH47F_GB {
         INVENTORY_VEHICLE_MEDIUM_ITEMS
     };
     class TransportBackpacks {
-        INVENTORY_VEHICLE_MEDIUM_BACKPACKS
+        INVENTORY_VEHICLE_HELO_BAGS
     };
     class AcreIntercoms {
         class Intercom_1 {

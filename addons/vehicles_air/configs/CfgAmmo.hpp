@@ -1,6 +1,7 @@
 class CfgAmmo {
     class BulletBase;
     class MissileBase;
+    class B_127x99_SLAP_Tracer_Red;
     class DAGR_Ammo_MELB : MissileBase {
         // https://ace3mod.com/wiki/framework/missile-guidance-framework.html
         manualControl = 0;  // Turn off vanilla crosshair guidance
@@ -53,8 +54,21 @@ class CfgAmmo {
     class CUP_B_762x51_Tracer_Red;
     class CUP_B_762x51_Tracer_Red_Splash : CUP_B_762x51_Tracer_Red {
         hit=2.5;
-        indirectHit=1.75;
-        indirectHitRange=2;
+        suppressionRadiusBulletClose = 2;
+        suppressionRadiusHit = 0.5;
+    };
+    
+    class B_127x99_SLAP_MELB: B_127x99_SLAP_Tracer_Red
+    {
+        cost = 3;
+        hit = 30;
+        indirectHit = 7;
+        indirectHitRange = 1;
+        dangerRadiusBulletClose = 20;
+        explosive = 0.3;
+        explosionEffects = ExploAmmoExplosion;
+        suppressionRadiusBulletClose = 7;
+        suppressionRadiusHit = 4;
     };
     #include "ammo\CUP_Sh_PG15V.hpp"
     // BTR and BDRM primary
